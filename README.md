@@ -1,3 +1,7 @@
 # Yakko Wakko Dotfiles
 
-  ![Animaniacs](http://img3.wikia.nocookie.net/__cb20140107232215/p__/protagonist/images/thumb/a/a0/YakkoWakkoandDot.png/305px-YakkoWakkoandDot.png)
+  ![Animaniacs](http://facto-personal.s3.amazonaws.com/animaniacs.gif)
+
+# Wat
+
+These are my experimental dotfiles, mostly ganked from the awesome [YADR](https://github.com/skwp/dotfiles) project.
