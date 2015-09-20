@@ -1,0 +1,14 @@
+[[plugins]]
+repository = "gregsexton/gitv"
+
+[[plugins]]
+repository = "mattn/gist-vim"
+
+[[plugins]]
+repository = "tpope/vim-fugitive"
+
+[[plugins]]
+repository = "tpope/vim-git"
+
+[[plugins]]
+repository = "airblade/vim-gitgutter"

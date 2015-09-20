@@ -3,31 +3,58 @@ if has('vim_starting')
   set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
 
-" Required:
-call neobundle#begin(expand('~/.vim/neobundles/'))
 
-" Let NeoBundle manage NeoBundle
-" Required:
-NeoBundleFetch 'Shougo/neobundle.vim'
 
-runtime ruby.neobundle
-runtime languages.neobundle
-runtime git.neobundle
-runtime appearance.neobundle
-runtime textobjects.neobundle
-runtime search.neobundle
-runtime project.neobundle
-runtime vim-improvements.neobundle
+call neobundle#begin(expand('~/.vim/bundle/'))
 
-if filereadable(expand("~/.vim/.neobundles.local"))
-  source ~/.vim/.neobundles.local
+if neobundle#load_cache()
+  NeoBundleFetch 'Shougo/neobundle.vim'
+
+  " Preloaded
+  call neobundle#load_toml(
+        \ '~/.vim/neobundles/preload.toml')
+
+  " Lazy-loaded
+  call neobundle#load_toml(
+        \ '~/.vim/neobundles/git.toml', {'lazy' : 1})
+  call neobundle#load_toml(
+        \ '~/.vim/neobundles/languages.toml', {'lazy' : 1})
+  call neobundle#load_toml(
+        \ '~/.vim/neobundles/project.toml', {'lazy' : 1})
+  call neobundle#load_toml(
+        \ '~/.vim/neobundles/ruby.toml', {'lazy' : 1})
+  call neobundle#load_toml(
+        \ '~/.vim/neobundles/search.toml', {'lazy' : 1})
+  call neobundle#load_toml(
+        \ '~/.vim/neobundles/textobjects.toml', {'lazy' : 1})
+  call neobundle#load_toml(
+        \ '~/.vim/neobundles/vim-improvements.toml', {'lazy' : 1})
+
+  " User-specified preloaded plugins
+  if filereadable(expand("~/.vim/.neobundles.local"))
+    call neobundle#load_toml(
+          \ '~/.vim/.neobundles.local')
+  endif
+
+  " User-specified lazy-loaded plugins
+  if filereadable(expand("~/.vim/.neobundles.local.lazy"))
+    call neobundle#load_toml(
+          \ '~/.vim/.neobundles.local.lazy', {'lazy' : 1})
+  endif
+
+  NeoBundleSaveCache
 endif
 
 call neobundle#end()
+
+
+
 
 " Required:
 filetype plugin indent on
 
 " If there are uninstalled bundles found on startup,
 " this will conveniently prompt you to install them.
-NeoBundleCheck
+if has('vim_starting')
+  NeoBundleCheck
+endif

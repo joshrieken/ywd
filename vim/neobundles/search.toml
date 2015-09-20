@@ -1,0 +1,17 @@
+[[plugins]]
+repository = "justinmk/vim-sneak"
+
+[[plugins]]
+repository = "rking/ag.vim"
+
+[[plugins]]
+repository = "vim-scripts/IndexedSearch"
+
+[[plugins]]
+repository = "nelstrom/vim-visual-star-search"
+
+[[plugins]]
+repository = "skwp/greplace.vim"
+
+[[plugins]]
+repository = "skwp/vim-easymotion"

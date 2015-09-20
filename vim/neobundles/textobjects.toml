@@ -1,0 +1,36 @@
+[[plugins]]
+repository = "austintaylor/vim-indentobject"
+
+[[plugins]]
+repository = "bootleq/vim-textobj-rubysymbol"
+
+[[plugins]]
+repository = "coderifous/textobj-word-column.vim"
+
+[[plugins]]
+repository = "kana/vim-textobj-datetime"
+
+[[plugins]]
+repository = "kana/vim-textobj-entire"
+
+[[plugins]]
+repository = "kana/vim-textobj-function"
+
+[[plugins]]
+repository = "kana/vim-textobj-user"
+
+[[plugins]]
+repository = "lucapette/vim-textobj-underscore"
+
+[[plugins]]
+repository = "nathanaelkane/vim-indent-guides"
+
+[[plugins]]
+repository = "nelstrom/vim-textobj-rubyblock"
+
+[[plugins]]
+repository = "thinca/vim-textobj-function-javascript"
+
+[[plugins]]
+repository = "vim-scripts/argtextobj.vim"
+

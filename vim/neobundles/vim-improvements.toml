@@ -1,0 +1,92 @@
+[[plugins]]
+repository = "AndrewRadev/splitjoin.vim"
+
+[[plugins]]
+repository = "Raimondi/delimitMate"
+
+[[plugins]]
+repository = "Shougo/neocomplete.git"
+
+[[plugins]]
+repository = "briandoll/change-inside-surroundings.vim.git"
+
+[[plugins]]
+repository = "godlygeek/tabular"
+
+[[plugins]]
+repository = "tomtom/tcomment_vim.git"
+
+[[plugins]]
+repository = "vim-scripts/camelcasemotion.git"
+
+[[plugins]]
+repository = "vim-scripts/matchit.zip.git"
+
+[[plugins]]
+repository = "terryma/vim-multiple-cursors"
+
+[[plugins]]
+repository = "Keithbsmiley/investigate.vim"
+
+[[plugins]]
+repository = "chrisbra/NrrwRgn"
+
+[[plugins]]
+repository = "MarcWeber/vim-addon-mw-utils.git"
+
+[[plugins]]
+repository = "bogado/file-line.git"
+
+[[plugins]]
+repository = "mattn/webapi-vim.git"
+
+[[plugins]]
+repository = "sjl/gundo.vim"
+
+[[plugins]]
+repository = "skwp/YankRing.vim"
+
+[[plugins]]
+repository = "tomtom/tlib_vim.git"
+
+[[plugins]]
+repository = "tpope/vim-abolish"
+
+[[plugins]]
+repository = "tpope/vim-endwise.git"
+
+[[plugins]]
+repository = "tpope/vim-ragtag"
+
+[[plugins]]
+repository = "tpope/vim-repeat.git"
+
+[[plugins]]
+repository = "tpope/vim-surround.git"
+
+[[plugins]]
+repository = "tpope/vim-unimpaired"
+
+[[plugins]]
+repository = "vim-scripts/AnsiEsc.vim.git"
+
+[[plugins]]
+repository = "vim-scripts/AutoTag.git"
+
+[[plugins]]
+repository = "vim-scripts/lastpos.vim"
+
+[[plugins]]
+repository = "vim-scripts/sudo.vim"
+
+[[plugins]]
+repository = "terryma/vim-multiple-cursors"
+
+[[plugins]]
+repository = "goldfeld/ctrlr.vim"
+
+[[plugins]]
+repository = "jeffkreeftmeijer/vim-numbertoggle.git"
+
+[[plugins]]
+repository = "vim-scripts/dbext.vim"

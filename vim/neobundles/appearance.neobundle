@@ -1,7 +1,0 @@
-NeoBundle "chrisbra/color_highlight.git"
-NeoBundle "skwp/vim-colors-solarized"
-NeoBundle "itchyny/lightline.vim"
-NeoBundle "bogado/file-line.git"
-NeoBundle "jby/tmux.vim.git"
-NeoBundle "morhetz/gruvbox"
-NeoBundle "xsunsmile/showmarks.git"
