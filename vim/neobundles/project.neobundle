@@ -1,0 +1,5 @@
+NeoBundle "jistr/vim-nerdtree-tabs.git"
+NeoBundle "scrooloose/nerdtree.git"
+NeoBundle "kien/ctrlp.vim"
+NeoBundle "xolox/vim-misc"
+NeoBundle "xolox/vim-session"
