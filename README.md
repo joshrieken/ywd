@@ -1,6 +1,6 @@
 # Yakko Wakko Dotfiles
 
-  ![Animaniacs](http://facto-personal.s3.amazonaws.com/animaniacs.gif)
+  ![Animaniacs](http://facto-personal.s3.amazonaws.com/github/animaniacs.gif)
 
 # Wat
 
