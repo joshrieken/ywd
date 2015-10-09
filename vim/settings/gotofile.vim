@@ -3,4 +3,4 @@
 " you to that line
 
 " use ,gf to go to file in a vertical split
-nnoremap <silent> ,gf   :vertical botright wincmd F<CR>
+nnoremap <silent> <space>gf   :vertical botright wincmd F<CR>

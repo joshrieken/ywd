@@ -1,20 +1,11 @@
 " Note: Skip initialization for vim-tiny or vim-small.
 if 0 | endif
 
-" Use Vim settings, rather then Vi settings (much better!).
-" This must be first, because it changes other options as a side effect.
-set nocompatible
-
-" TODO: this may not be in the correct place. It is intended to allow overriding <Leader>.
-" source ~/.vimrc.before if it exists.
-if filereadable(expand("~/.vimrc.before"))
-  source ~/.vimrc.before
-endif
-
 
 
 
 " ================ GENERAL SETTINGS
+set nocompatible
 set number                      " Line numbers
 set backspace=indent,eol,start  " Allow backspace in insert mode
 set history=1000                " Store lots of :cmdline history
@@ -24,27 +15,17 @@ set gcr=a:blinkon0              " Disable cursor blink
 set visualbell                  " No sounds
 set autoread                    " Reload files changed outside vim
 set ruler
-
-" This makes vim act like all other editors, buffers can
-" exist in the background without being in a window.
-" http://items.sjbach.com/319/configuring-vim-right
 set hidden
-
-" Syntax highlighting is good
 syntax on
 
-" Change leader to a comma because backslash is too far away
-" That means all \x commands turn into ,x
-" The mapleader has to be set before neobundle starts loading all
-" the plugins.
-let mapleader=","
+let mapleader="\<Space>"
 
 
 
 
-" ================ NEOBUNDLE INITIALIZATION
-if filereadable(expand("~/.vim/neobundles.vim"))
-  source ~/.vim/neobundles.vim
+" ================ PLUGS INITIALIZATION
+if filereadable(expand("~/.vim/plugs.vim"))
+  source ~/.vim/plugs.vim
 endif
 
 
