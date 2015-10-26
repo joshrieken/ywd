@@ -73,3 +73,10 @@ vmap <A-A> :Tabularize /
 
 " Source current file Alt-% (good for vim development)
 map <A-%> :so %<CR>
+
+nnoremap <A-J> :m .+1<CR>==
+nnoremap <A-K> :m .-2<CR>==
+inoremap <A-J> <Esc>:m .+1<CR>==gi
+inoremap <A-K> <Esc>:m .-2<CR>==gi
+vnoremap <A-J> :m '>+1<CR>gv=gv
+vnoremap <A-K> :m '<-2<CR>gv=gv

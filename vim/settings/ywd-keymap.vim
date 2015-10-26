@@ -152,5 +152,16 @@ map <silent> <leader>hp :!open -a Safari %<CR><CR>
 
 " Map Ctrl-x and Ctrl-z to navigate the quickfix error list (normally :cn and
 " :cp)
-nnoremap <silent> <C-x> :cn<CR>
-nnoremap <silent> <C-z> :cp<CR>
+"nnoremap <silent> <C-x> :cn<CR>
+"nnoremap <silent> <C-z> :cp<CR>
+
+nmap <silent> <leader>ev :e $MYVIMRC<CR>
+nmap <silent> <leader>sv :so $MYVIMRC<CR>
+
+nmap <CR> o<Esc>
+nmap <S-Enter> O<Esc>
+
+imap <c-c> <esc>
+
+" Easily switch between light and dark modes
+nmap <Leader>cb :let &background = ( &background == "dark"? "light" : "dark" )<CR>

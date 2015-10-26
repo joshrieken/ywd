@@ -10,6 +10,7 @@ vim/after/.vimrc.after
 vim/.neobundles.local
 vim/.neobundles.local.bak
 vim/bundle
+vim/plugged
 vim/sessions
 .netrwhist
 bin/subl

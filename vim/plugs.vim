@@ -1,12 +1,18 @@
 call plug#begin('~/.vim/plugged')
 
+Plug 'mhinz/vim-startify'
 Plug 'chrisbra/Colorizer'
 Plug 'skwp/vim-colors-solarized'
+Plug 'flazz/vim-colorschemes'
 Plug 'itchyny/lightline.vim'
 Plug 'bogado/file-line'
-Plug 'morhetz/gruvbox'
 Plug 'xsunsmile/showmarks'
 Plug 'ctrlpvim/ctrlp.vim'
+Plug 'sgur/ctrlp-extensions.vim'
+Plug 'christoomey/vim-tmux-navigator'
+Plug 'moll/vim-bbye'
+Plug 'tpope/vim-dispatch'
+Plug '844196/lightline-badwolf.vim'
 
 Plug 'gregsexton/gitv'
 Plug 'mattn/gist-vim'
@@ -27,13 +33,15 @@ Plug 'itspriddle/vim-jquery'
 Plug 'jtratner/vim-flavored-markdown'
 Plug 'kchmck/vim-coffee-script'
 Plug 'scrooloose/syntastic'
-Plug 'garbas/vim-snipmate'
+Plug 'SirVer/ultisnips'
 Plug 'nelstrom/vim-markdown-preview'
 Plug 'skwp/vim-html-escape'
 Plug 'honza/vim-snippets'
 Plug 'slim-template/vim-slim'
 Plug 'elixir-lang/vim-elixir'
 Plug 'mattonrails/vim-mix'
+Plug 'mattn/emmet-vim'
+Plug 'avdgaag/vim-phoenix'
 
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'scrooloose/nerdtree'
@@ -47,27 +55,26 @@ Plug 'tpope/vim-rvm'
 Plug 'vim-ruby/vim-ruby'
 Plug 'Keithbsmiley/rspec.vim'
 Plug 'skwp/vim-iterm-rspec'
-Plug 'skwp/vim-spec-finder'
 Plug 'ck3g/vim-change-hash-syntax'
 Plug 'tpope/vim-bundler'
 
-Plug 'justinmk/vim-sneak'
 Plug 'rking/ag.vim'
 Plug 'vim-scripts/IndexedSearch'
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'skwp/greplace.vim'
-Plug 'skwp/vim-easymotion'
+Plug 'easymotion/vim-easymotion'
 
-Plug 'austintaylor/vim-indentobject'
-Plug 'bootleq/vim-textobj-rubysymbol'
-Plug 'coderifous/textobj-word-column.vim'
-Plug 'kana/vim-textobj-datetime'
-Plug 'kana/vim-textobj-entire'
-Plug 'kana/vim-textobj-function'
-Plug 'kana/vim-textobj-user'
-Plug 'lucapette/vim-textobj-underscore'
-Plug 'nathanaelkane/vim-indent-guides'
-Plug 'nelstrom/vim-textobj-rubyblock'
+
+Plug 'austintaylor/vim-indentobject' " A text object for manipulating blocks based on their indentation
+Plug 'bootleq/vim-textobj-rubysymbol' " Text object for manipulation of ruby symbol variables
+Plug 'coderifous/textobj-word-column.vim' " Adds text-objects for word-based columns in Vim.
+Plug 'kana/vim-textobj-datetime' " Vim plugin: Text objects for date and time
+Plug 'kana/vim-textobj-entire' " Vim plugin: Text objects for entire buffer
+Plug 'kana/vim-textobj-function' " Vim plugin: Text objects for functions
+Plug 'kana/vim-textobj-user' " Vim plugin: Create your own text objects
+Plug 'lucapette/vim-textobj-underscore' " Underscore text-object for Vim
+Plug 'nathanaelkane/vim-indent-guides' " A Vim plugin for visually displaying indent levels in code
+Plug 'nelstrom/vim-textobj-rubyblock' " A custom text object for selecting ruby blocks.
 Plug 'thinca/vim-textobj-function-javascript'
 Plug 'vim-scripts/argtextobj.vim'
 
@@ -79,11 +86,9 @@ Plug 'godlygeek/tabular'
 Plug 'tomtom/tcomment_vim'
 Plug 'vim-scripts/camelcasemotion'
 Plug 'vim-scripts/matchit.zip'
-Plug 'terryma/vim-multiple-cursors'
 Plug 'Keithbsmiley/investigate.vim'
 Plug 'chrisbra/NrrwRgn'
 Plug 'MarcWeber/vim-addon-mw-utils'
-Plug 'bogado/file-line'
 Plug 'mattn/webapi-vim'
 Plug 'sjl/gundo.vim'
 Plug 'skwp/YankRing.vim'
@@ -94,6 +99,7 @@ Plug 'tpope/vim-ragtag'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
+Plug 'tpope/vim-projectionist'
 Plug 'vim-scripts/AnsiEsc.vim'
 Plug 'vim-scripts/AutoTag'
 Plug 'vim-scripts/lastpos.vim'

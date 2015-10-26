@@ -16,6 +16,8 @@ set visualbell                  " No sounds
 set autoread                    " Reload files changed outside vim
 set ruler
 set hidden
+set winheight=30
+set winminheight=5
 syntax on
 
 let mapleader="\<Space>"

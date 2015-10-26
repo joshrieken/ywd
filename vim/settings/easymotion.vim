@@ -1,8 +1,26 @@
-" These keys are easier to type than the default set
-" We exclude semicolon because it's hard to read and
-" i and l are too easy to mistake for each other slowing
-" down recognition. The home keys and the immediate keys
-" accessible by middle fingers are available
+let g:EasyMotion_do_mapping=0
 let g:EasyMotion_keys='asdfjkoweriop'
-nnoremap <leader>f ,,w
-nnoremap <leader>b ,,b
+let g:EasyMotion_startofline = 0 " keep cursor column when JK motion
+let g:EasyMotion_smartcase = 1
+nnoremap <leader>   <Plug>(easymotion-prefix)
+nmap S <Plug>(easymotion-sl2)
+nmap <leader>f  <Plug>(easymotion-f)
+nmap <leader>F  <Plug>(easymotion-F)
+"nmap <leader>t  <Plug>(easymotion-t)
+"nmap <leader>T  <Plug>(easymotion-T)
+nmap <leader>w  <Plug>(easymotion-w)
+nmap <leader>W  <Plug>(easymotion-W)
+nmap <leader>b  <Plug>(easymotion-b)
+nmap <leader>B  <Plug>(easymotion-B)
+nmap <leader>e  <Plug>(easymotion-e)
+nmap <leader>E  <Plug>(easymotion-E)
+nmap <leader>ge <Plug>(easymotion-ge)
+nmap <leader>gE <Plug>(easymotion-gE)
+nmap <leader>l <Plug>(easymotion-lineforward)
+nmap <leader>j <Plug>(easymotion-j)
+nmap <leader>k <Plug>(easymotion-k)
+nmap <leader>h <Plug>(easymotion-linebackward)
+"nmap <leader>n  <Plug>(easymotion-n)
+"nmap <leader>N  <Plug>(easymotion-N)
+nmap <leader>s  <Plug>(easymotion-s2)
+nmap <leader>/  <Plug>(easymotion-sn)
