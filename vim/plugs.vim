@@ -12,7 +12,7 @@ Plug 'sgur/ctrlp-extensions.vim'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'moll/vim-bbye'
 Plug 'tpope/vim-dispatch'
-Plug '844196/lightline-badwolf.vim'
+Plug 'shinchu/lightline-gruvbox.vim'
 
 Plug 'gregsexton/gitv'
 Plug 'mattn/gist-vim'
