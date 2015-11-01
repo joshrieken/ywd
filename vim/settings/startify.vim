@@ -1,3 +1,7 @@
+autocmd User Startified setlocal buftype= " ensures startify doesn't actually have its own buffer
+
+
+
 " let g:startify_custom_header = [
 " \ '        _____|___',
 " \ '     __/ ____|___|  _   _   _____    ___    _   _    ___',
