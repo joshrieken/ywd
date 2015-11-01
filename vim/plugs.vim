@@ -80,7 +80,11 @@ Plug 'vim-scripts/argtextobj.vim'
 
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Raimondi/delimitMate'
-Plug 'Shougo/neocomplete'
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim'
+else
+  Plug 'Shougo/neocomplete'
+endif
 Plug 'briandoll/change-inside-surroundings.vim'
 Plug 'godlygeek/tabular'
 Plug 'tomtom/tcomment_vim'
