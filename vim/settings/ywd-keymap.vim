@@ -156,7 +156,6 @@ map <silent> <leader>hp :!open -a Safari %<CR><CR>
 "nnoremap <silent> <C-z> :cp<CR>
 
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
-nmap <silent> <leader>sv :so $MYVIMRC<CR>
 
 nmap <CR> o<Esc>
 nmap <S-Enter> O<Esc>
