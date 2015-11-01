@@ -124,5 +124,11 @@ set ignorecase      " Ignore case when searching...
 set smartcase       " ...unless we type a capital
 
 
+
+" ================ nvim-specific settings
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+let g:deoplete#enable_at_startup = 1
+
+
 " Load settings
 so ~/.yakko-wakko-dotfiles/vim/settings.vim
