@@ -151,8 +151,8 @@ map <silent> <leader>hp :!open -a Safari %<CR><CR>
 
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 
-nmap <CR> o<Esc>
-nmap <S-Enter> O<Esc>
+"nmap <CR> o<Esc>
+"nmap <S-Enter> O<Esc>
 
 imap <c-c> <esc>
 
