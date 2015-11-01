@@ -58,7 +58,7 @@ Plug 'skwp/vim-iterm-rspec'
 Plug 'ck3g/vim-change-hash-syntax'
 Plug 'tpope/vim-bundler'
 
-Plug 'rking/ag.vim'
+Plug 'wincent/ferret'
 Plug 'vim-scripts/IndexedSearch'
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'skwp/greplace.vim'
