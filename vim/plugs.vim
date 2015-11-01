@@ -59,11 +59,11 @@ Plug 'ck3g/vim-change-hash-syntax'
 Plug 'tpope/vim-bundler'
 
 Plug 'wincent/ferret'
+Plug 'dyng/ctrlsf.vim'
 Plug 'vim-scripts/IndexedSearch'
 Plug 'nelstrom/vim-visual-star-search'
 Plug 'skwp/greplace.vim'
 Plug 'easymotion/vim-easymotion'
-
 
 Plug 'austintaylor/vim-indentobject' " A text object for manipulating blocks based on their indentation
 Plug 'bootleq/vim-textobj-rubysymbol' " Text object for manipulation of ruby symbol variables
