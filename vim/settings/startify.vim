@@ -1,4 +1,5 @@
 autocmd User Startified setlocal buftype= " ensures startify doesn't actually have its own buffer
+let g:startify_change_to_vcs_root = 1
 
 
 
