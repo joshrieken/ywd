@@ -53,6 +53,5 @@ let g:ctrlp_map = '<space>t'
 "map <leader>jF :CtrlP factories<CR>
 "map <leader>jT :CtrlP test<CR>
 
-"Cmd-Shift-(M)ethod - jump to a method (tag in current file)
-"Ctrl-m is not good - it overrides behavior of Enter
-"nnoremap <silent> <D-M> :CtrlPBufTag<CR>
+"Jump to a method (tag in current file)
+nnoremap <silent> <leader>p :CtrlPBufTag<CR>
