@@ -76,7 +76,8 @@ imap <C-a> <esc>wa
 
 " ==== NERD tree
 " Open the project tree and expose current file in the nerdtree with Ctrl-\
-nnoremap <silent> <C-\> :NERDTreeFind<CR>:vertical<CR>
+nnoremap <silent> <C-\> :NERDTreeToggle<CR>
+nnoremap <silent> <leader>\ :NERDTreeFind<CR>
 
 nmap <silent> <leader>qc :cclose<CR>
 nmap <silent> <leader>qo :copen<CR>
@@ -104,10 +105,10 @@ nnoremap <silent> vv <C-w>v
 nnoremap <silent> ss <C-w>s
 
 " create <%= foo %> erb tags using Ctrl-k in edit mode
-imap <silent> <C-K> <%=   %><Esc>3hi
+" imap <silent> <C-K> <%=   %><Esc>3hi
 
 " create <%= foo %> erb tags using Ctrl-j in edit mode
-imap <silent> <C-J> <%  %><Esc>2hi
+" imap <silent> <C-J> <%  %><Esc>2hi
 
 " ============================
 " Shortcuts for everyday tasks
