@@ -81,7 +81,7 @@ Plug 'vim-scripts/argtextobj.vim'
 Plug 'AndrewRadev/splitjoin.vim'
 Plug 'Raimondi/delimitMate'
 if has('nvim')
-  Plug 'Shougo/deoplete.nvim'
+  Plug 'Valloric/YouCompleteMe'
 else
   Plug 'Shougo/neocomplete'
 endif
