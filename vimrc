@@ -66,8 +66,8 @@ set expandtab
 nnoremap p p=`]<C-o>
 nnoremap P P=`]<C-o>
 
-nmap <leader>p pV`]=
-nmap <leader>P PV`]=
+" nmap <leader>p pV`]=
+" nmap <leader>P PV`]=
 
 nmap <leader>cp "*pV`]=
 nmap <leader>cP "*PV`]=
