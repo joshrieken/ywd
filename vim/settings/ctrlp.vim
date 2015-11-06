@@ -14,6 +14,8 @@ else
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
 endif
 
+let g:ctrlp_show_hidden = 1
+
 " Default to filename searches - so that appctrl will find application
 " controller
 let g:ctrlp_by_filename = 1
