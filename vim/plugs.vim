@@ -2,7 +2,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'mhinz/vim-startify'
 Plug 'chrisbra/Colorizer'
-Plug 'skwp/vim-colors-solarized'
 Plug 'flazz/vim-colorschemes'
 Plug 'itchyny/lightline.vim'
 Plug 'bogado/file-line'
