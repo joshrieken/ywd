@@ -25,6 +25,17 @@ endfunction
 nnoremap 0 ^
 nnoremap ^ 0
 
+
+" Auto indent pasted text
+nnoremap p p=`]<C-o>
+nnoremap P P=`]<C-o>
+
+nmap <leader>cp "*pV`]=
+nmap <leader>cP "*PV`]=
+
+nnoremap <leader>ip V`]=
+
+
 " Surround a word with #{ruby interpolation}
 map <leader># ysiw#
 vmap <leader># c#{<C-R>"}<ESC>
@@ -62,7 +73,7 @@ map <leader>` ysiw`
 " pipeline operator
 imap <c-l> \|><space>
 
-"Go to last edit location with ,.
+"Go to last edit location
 nnoremap <leader>. '.
 
 "When typing a string, your quotes auto complete. Move past the quote
@@ -147,10 +158,8 @@ map <silent> <leader>hp :!open -a Safari %<CR><CR>
 
 nmap <silent> <leader>ev :e $MYVIMRC<CR>
 
-"nmap <CR> o<Esc>
-"nmap <S-Enter> O<Esc>
-
-imap <c-c> <esc>
+" Avoid idiosyncrasies of C-c vs ESC in insert mode by always using ESC
+imap <C-c> <ESC>
 
 " Easily switch between light and dark modes
 nmap <Leader>cb :let &background = ( &background == "dark"? "light" : "dark" )<CR>
