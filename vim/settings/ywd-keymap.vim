@@ -74,11 +74,6 @@ nnoremap <leader>. '.
 " put the cursor right after the quote
 imap <C-a> <esc>wa
 
-" ==== NERD tree
-" Open the project tree and expose current file in the nerdtree with Ctrl-\
-nnoremap <silent> <C-\> :NERDTreeToggle<CR>
-nnoremap <silent> <leader>\ :NERDTreeFind<CR>
-
 nmap <silent> <leader>qc :cclose<CR>
 nmap <silent> <leader>qo :copen<CR>
 
