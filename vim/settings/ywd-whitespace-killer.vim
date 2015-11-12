@@ -12,5 +12,5 @@ function! <SID>StripTrailingWhitespaces()
     call cursor(l, c)
 endfunction
 command! StripTrailingWhitespaces call <SID>StripTrailingWhitespaces()
-nmap ,w :StripTrailingWhitespaces<CR>
+nmap <leader>kw :StripTrailingWhitespaces<CR>
 autocmd FileType c,cpp,java,php,ruby,python,elixir autocmd BufWritePre <buffer> :call <SID>StripTrailingWhitespaces()
