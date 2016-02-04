@@ -63,9 +63,3 @@ vmap ˇ :Tabularize /
 " Source current file Alt-% (good for vim development)
 map ﬁ :so %<CR>
 
-nnoremap Ô :m .+1<CR>== " alt-J
-nnoremap  :m .-2<CR>== " alt-K
-inoremap Ô <Esc>:m .+1<CR>==gi
-inoremap  <Esc>:m .-2<CR>==gi
-vnoremap Ô :m '>+1<CR>gv=gv
-vnoremap  :m '<-2<CR>gv=gv
