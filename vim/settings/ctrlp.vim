@@ -16,6 +16,9 @@ endif
 
 let g:ctrlp_show_hidden = 1
 
+" Don't zoom to the project root automatically
+let g:ctrlp_working_path_mode = 0
+
 " Default to filename searches - so that appctrl will find application
 " controller
 " let g:ctrlp_by_filename = 1
