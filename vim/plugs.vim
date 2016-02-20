@@ -101,6 +101,7 @@ Plug 'tpope/vim-surround' " surround.vim: quoting/parenthesizing made simple
 Plug 'tpope/vim-unimpaired' " unimpaired.vim: pairs of handy bracket mappings
 Plug 'tpope/vim-projectionist' " projectionist.vim: project configuration
 Plug 'tpope/vim-eunuch' " eunuch.vim: helpers for UNIX
+Plug 'tpope/vim-obsession' " obsession.vim: continuously updated session files http://www.vim.org/scripts/script.php?script_id=4472
 Plug 'vim-scripts/AnsiEsc.vim' " ansi escape sequences concealed, but highlighted as specified (conceal)
 Plug 'vim-scripts/AutoTag' " Updates entries in a tags file automatically when saving
 Plug 'vim-scripts/lastpos.vim' " Last position jump improved for Easy Vim
