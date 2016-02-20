@@ -1,5 +1,3 @@
-" Make it beautiful - colors and fonts
-
 if has("gui_running")
   " Show tab number (useful for Cmd-1, Cmd-2.. mapping)
   " For some reason this doesn't work as a regular set command,
@@ -16,7 +14,6 @@ if has("gui_running")
   endif
 endif
 
-set t_Co=256
 set background=dark
 colorscheme gruvbox
 let g:gruvbox_contrast_dark="hard"
