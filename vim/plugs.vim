@@ -23,6 +23,7 @@ Plug 'airblade/vim-gitgutter' " A Vim plugin which shows a git diff in the gutte
 Plug 'mattn/emmet-vim' " emmet for vim: http://emmet.io/
 Plug 'scrooloose/syntastic' " Syntax checking hacks for vim
 Plug 'SirVer/ultisnips' " The ultimate snippet solution for Vim. Send pull requests to SirVer/ultisnips!
+Plug 'junegunn/vim-easy-align' " A Vim alignment plugin
 
 Plug 'sheerun/vim-polyglot' " A solid language pack for Vim.
 Plug 'jby/tmux.vim' " Tmux vim syntax
