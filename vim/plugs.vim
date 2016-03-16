@@ -27,6 +27,7 @@ Plug 'junegunn/vim-easy-align' " A Vim alignment plugin
 
 Plug 'sheerun/vim-polyglot' " A solid language pack for Vim.
 Plug 'jby/tmux.vim' " Tmux vim syntax
+Plug 'janko-m/vim-test' " Run your tests at the speed of thought
 Plug 'pangloss/vim-javascript' " Vastly improved Javascript indentation and syntax support in Vim.
 Plug 'othree/javascript-libraries-syntax.vim' " Syntax for JavaScript libraries
 Plug 'itspriddle/vim-jquery'
