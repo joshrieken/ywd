@@ -6,6 +6,7 @@ if 0 | endif
 
 " ================ GENERAL SETTINGS
 set nocompatible
+set encoding=utf8
 set number                      " Line numbers
 set backspace=indent,eol,start  " Allow backspace in insert mode
 set history=1000                " Store lots of :cmdline history
