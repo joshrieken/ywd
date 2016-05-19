@@ -106,7 +106,7 @@ snippet # "insert a string interpolation" !i
 endsnippet
 
 snippet | "insert a pipe operator" !i
-|> 
+|>
 endsnippet
 
 snippet |i "insert a pipe to IO.inspect" !i
@@ -123,4 +123,24 @@ snippet before_compile "insert before_compile macro" !b
 defmacro __before_compile__(env) do
   $1
 end
+endsnippet
+
+snippet cpub "insert comment denoting public functions" !i
+# PUBLIC ###################################################
+endsnippet
+
+snippet cpubapi "insert comment denoting public API functions" !i
+# PUBLIC API ###############################################
+endsnippet
+
+snippet cpriv "insert comment denoting private functions" !i
+# PRIVATE ##################################################
+endsnippet
+
+snippet cprivapi "insert comment denoting private API functions" !i
+# PRIVATE API ##############################################
+endsnippet
+
+snippet cmixin "insert comment denoting mixin option functions" !i
+# MIXIN OPTIONS ############################################
 endsnippet
