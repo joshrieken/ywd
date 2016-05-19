@@ -36,7 +36,6 @@ Plug 'jtratner/vim-flavored-markdown'
 Plug 'nelstrom/vim-markdown-preview' " preview markdown documents in the browser from vim
 Plug 'skwp/vim-html-escape' " pluginization of http://vim.wikia.com/wiki/HTML_entities
 Plug 'honza/vim-snippets' " vim-snipmate default snippets (Previously snipmate-snippets)
-Plug 'justinj/vim-react-snippets' " Vim version of the snippets from jgebhardt/sublime-react
 Plug 'mattonrails/vim-mix' " Vim plugin for using Elixir's build tool, mix
 Plug 'avdgaag/vim-phoenix' " Vim plugin for working with the Phoenix framework
 
