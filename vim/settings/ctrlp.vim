@@ -58,5 +58,3 @@ nnoremap <silent> <leader>b :CtrlPBuffer<cr>
 nnoremap <silent> <leader>p :CtrlPBufTag<CR>
 nnoremap <silent> <leader>b :CtrlPBuffer<CR>
 nnoremap <silent> <leader>mru :CtrlPMRU<CR>
-
-
