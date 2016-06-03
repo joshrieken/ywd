@@ -6,7 +6,7 @@ Plug 'flazz/vim-colorschemes' " one colorscheme pack to rule them all!
 Plug 'itchyny/lightline.vim' " A light and configurable statusline/tabline for Vim
 Plug 'bogado/file-line' " Plugin for vim to enabling opening a file in a given line
 Plug 'xsunsmile/showmarks'
-Plug 'ctrlpvim/ctrlp.vim'
+Plug 'ctrlpvim/ctrlp.vim' " Fuzzy file, buffer, mru, tag, etc finder.
 Plug 'sgur/ctrlp-extensions.vim' " Plugins for ctrlp.vim
 Plug 'christoomey/vim-tmux-navigator' " Seamless navigation between tmux panes and vim splits
 Plug 'moll/vim-bbye' " Delete buffers and close files in Vim without closing your windows or messing up your layout. Like Bclose.vim, but rewritten and well maintained.
