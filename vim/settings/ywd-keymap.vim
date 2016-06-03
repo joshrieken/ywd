@@ -33,7 +33,8 @@ nnoremap P P=`]<C-o>
 nmap <leader>cp "*pV`]=
 nmap <leader>cP "*PV`]=
 
-nnoremap <leader>ip V`]=
+nnoremap <leader>ip pV`]=
+nnoremap <leader>iP V`]=
 
 
 " Surround a word with #{ruby interpolation}
