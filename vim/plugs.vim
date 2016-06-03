@@ -106,7 +106,7 @@ Plug 'tpope/vim-projectionist' " projectionist.vim: project configuration
 Plug 'tpope/vim-eunuch' " eunuch.vim: helpers for UNIX
 Plug 'tpope/vim-obsession' " obsession.vim: continuously updated session files http://www.vim.org/scripts/script.php?script_id=4472
 Plug 'vim-scripts/AnsiEsc.vim' " ansi escape sequences concealed, but highlighted as specified (conceal)
-Plug 'vim-scripts/AutoTag' " Updates entries in a tags file automatically when saving
+Plug 'craigemery/vim-autotag' " Automatically discover and properly update ctags files on save
 Plug 'vim-scripts/lastpos.vim' " Last position jump improved for Easy Vim
 Plug 'vim-scripts/sudo.vim' " Allows one to edit a file with prevledges from an unprivledged session.
 Plug 'terryma/vim-multiple-cursors' " True Sublime Text style multiple selections for Vim
