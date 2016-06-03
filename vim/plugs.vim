@@ -111,7 +111,6 @@ Plug 'vim-scripts/AnsiEsc.vim' " ansi escape sequences concealed, but highlighte
 Plug 'craigemery/vim-autotag' " Automatically discover and properly update ctags files on save
 Plug 'vim-scripts/lastpos.vim' " Last position jump improved for Easy Vim
 Plug 'vim-scripts/sudo.vim' " Allows one to edit a file with prevledges from an unprivledged session.
-Plug 'terryma/vim-multiple-cursors' " True Sublime Text style multiple selections for Vim
 Plug 'goldfeld/ctrlr.vim' " Ex command history reverse-i-search for Vim
 Plug 'jeffkreeftmeijer/vim-numbertoggle' " Toggles between relative and absolute line numbers automatically
 Plug 'vim-scripts/dbext.vim' " Provides database access to many dbms (Oracle, Sybase, Microsoft, MySQL, DBI,..)
