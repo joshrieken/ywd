@@ -14,6 +14,8 @@ else
   let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files . --cached --exclude-standard --others']
 endif
 
+let g:ctrlp_extensions = ['tag', 'buffertag']
+
 let g:ctrlp_show_hidden = 1
 
 " Don't zoom to the project root automatically
@@ -31,15 +33,23 @@ let g:ctrlp_working_path_mode = 0
 " it interferes with YankRing (paste, then hit ctrl-p)
 let g:ctrlp_map = '<leader>t'
 
-" Additional mapping for buffer search
-nnoremap <silent> <leader>b :CtrlPBuffer<cr>
+" Search buffers
+nnoremap <silent> <leader>bb :CtrlPBuffer<cr>
 
-" Cmd-Shift-P to clear the cache
-"nnoremap <silent> <D-P> :ClearCtrlPCache<cr>
+" Search tags in the current buffer
+nnoremap <silent> <leader>bt :CtrlPBufTag<cr>
+
+" Search all tags
+nnoremap <silent> <leader>p :CtrlPTag<cr>
+
+" Search most recently used files
+nnoremap <silent> <leader>mru :CtrlPMRU<cr>
+
 
 " Idea from : http://www.charlietanksley.net/blog/blog/2011/10/18/vim-navigation-with-lustyexplorer-and-lustyjuggler/
 " Open CtrlP starting from a particular path, making it much
 " more likely to find the correct thing first. mnemonic 'jump to [something]'
+" Rails-specific
 "map <leader>ja :CtrlP app/assets<CR>
 "map <leader>jm :CtrlP app/models<CR>
 "map <leader>jc :CtrlP app/controllers<CR>
@@ -55,6 +65,3 @@ nnoremap <silent> <leader>b :CtrlPBuffer<cr>
 "map <leader>jF :CtrlP factories<CR>
 "map <leader>jT :CtrlP test<CR>
 
-nnoremap <silent> <leader>p :CtrlPBufTag<CR>
-nnoremap <silent> <leader>b :CtrlPBuffer<CR>
-nnoremap <silent> <leader>mru :CtrlPMRU<CR>
