@@ -11,12 +11,10 @@ let g:multi_cursor_prev_key='<C-p>'
 let g:multi_cursor_skip_key='<C-x>'
 let g:multi_cursor_quit_key='<C-c>'
 
-" Called once right before you start selecting multiple cursors
-function! Multiple_cursors_before()
-  call youcompleteme#DisableCursorMovedAutocommands()
+function g:Multiple_cursors_before()
+  let g:deoplete#disable_auto_complete = 1
 endfunction
 
-" Called once only when the multiple selection is canceled (default <Esc>)
-function! Multiple_cursors_after()
-  call youcompleteme#EnableCursorMovedAutocommands()
+function g:Multiple_cursors_after()
+  let g:deoplete#disable_auto_complete = 0
 endfunction

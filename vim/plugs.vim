@@ -79,11 +79,13 @@ Plug 'vim-scripts/argtextobj.vim' " Text-object like motion for arguments
 
 Plug 'AndrewRadev/splitjoin.vim' " A vim plugin that simplifies the transition between multiline and single-line code
 Plug 'Raimondi/delimitMate' " Vim plugin, provides insert mode auto-completion for quotes, parens, brackets, etc.
+
 if has('nvim')
-  Plug 'Valloric/YouCompleteMe' " A code-completion engine for Vim
+  Plug 'Shougo/deoplete.nvim' " Dark powered asynchronous completion framework for neovim
 else
   Plug 'Shougo/neocomplete' " Next generation completion framework after neocomplcache
 endif
+
 Plug 'briandoll/change-inside-surroundings.vim' " vim plugin to change the contents of the innermost 'surrounding'
 Plug 'godlygeek/tabular' " Vim script for text filtering and alignment
 Plug 'tomtom/tcomment_vim' " An extensible & universal comment vim-plugin that also handles embedded filetypes
