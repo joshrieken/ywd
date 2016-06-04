@@ -53,13 +53,6 @@ nnoremap Í <C-w>-
 nnoremap Å <C-w><
 nnoremap Î  <C-w>>
 
-" ============================
-" Tabularize - alignment
-" ============================
-" Alt-T
-nmap ˇ :Tabularize /
-vmap ˇ :Tabularize /
-
 " Source current file Alt-% (good for vim development)
 map ﬁ :so %<CR>
 
