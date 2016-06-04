@@ -116,7 +116,7 @@ set smartcase       " ...unless we type a capital
 
 
 
-" ================ nvim-specific settings
+" ================ NEOVIM
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 
