@@ -248,6 +248,8 @@ Plug 'mattn/emmet-vim'
 Plug 'skwp/vim-html-escape'
 " HTML/XML mappings
 Plug 'tpope/vim-ragtag'
+" SCSS syntax
+Plug 'cakebaker/scss-syntax.vim'
 
 
 " ---------------------------------------------------------------------------------------------------------------------
