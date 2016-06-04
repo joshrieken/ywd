@@ -26,7 +26,7 @@ let mapleader="\<Space>"
 
 
 
-" ================ PLUGS INITIALIZATION
+" ================ INITIALIZE PLUGS
 if filereadable(expand("~/.vim/plugs.vim"))
   source ~/.vim/plugs.vim
 endif
