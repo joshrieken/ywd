@@ -24,8 +24,8 @@ Plug 'sjl/gundo.vim'
 " ---------------------------------------------------------------------------------------------------------------------
 " Colorschemes
 Plug 'flazz/vim-colorschemes'
-" Color hex codes and color names
-Plug 'chrisbra/Colorizer'
+" Colorize all text in the form #rrggbb or #rgb
+Plug 'lilydjwg/colorizer', { 'for': ['css', 'sass', 'scss', 'less', 'html', 'xhtml', 'javascript', 'javascript.jsx'] }
 " lightline.vim theme for gruvbox
 Plug 'shinchu/lightline-gruvbox.vim'
 
