@@ -71,6 +71,8 @@ Plug 'tpope/vim-projectionist'
 Plug 'vim-scripts/AnsiEsc.vim'
 " Edit a file with privileges from an unpriviledged session
 Plug 'vim-scripts/sudo.vim'
+" View references
+Plug 'thinca/vim-ref'
 
 
 " ---------------------------------------------------------------------------------------------------------------------
@@ -203,6 +205,8 @@ Plug 'tpope/vim-endwise'
 Plug 'mattonrails/vim-mix'
 " Phoenix framework
 Plug 'avdgaag/vim-phoenix'
+" Completion/Doc/Eval
+Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
 
 
 " ---------------------------------------------------------------------------------------------------------------------
