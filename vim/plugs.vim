@@ -127,7 +127,7 @@ Plug 'tpope/vim-fugitive'
 " Show a git diff in the gutter (sign column) and stages/reverts hunks
 Plug 'airblade/vim-gitgutter'
 " Visual git
-Plug 'gregsexton/gitv'
+Plug 'gregsexton/gitv', { 'on': 'Gitv' }
 
 
 " ---------------------------------------------------------------------------------------------------------------------
