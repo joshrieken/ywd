@@ -68,7 +68,6 @@ YWD uses [vim-plug](https://github.com/junegunn/vim-plug) because it's simple, s
 * `W` - like `w` but works with CamelCase and snake_case
 * `B` - like `b` but works with CamelCase and snake_case
 * `E` - like `e` but works with CamelCase and snake_case
-* `gr` - like `ge` but works with CamelCase and snake_case
 
 ## Notable Plugs
 
