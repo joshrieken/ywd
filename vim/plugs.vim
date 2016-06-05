@@ -98,6 +98,8 @@ Plug 'vim-scripts/IndexedSearch'
 Plug 'nelstrom/vim-visual-star-search'
 " Move lines and selections up and down
 Plug 'matze/vim-move'
+" Lightning-fast left-right movement
+Plug 'unblevable/quick-scope'
 
 
 " ---------------------------------------------------------------------------------------------------------------------
