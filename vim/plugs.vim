@@ -1,7 +1,7 @@
 call plug#begin('~/.vim/plugged')
 
 " ---------------------------------------------------------------------------------------------------------------------
-" General interface improvements
+" General interface improvements {{{
 " ---------------------------------------------------------------------------------------------------------------------
 " Fancy start screen
 Plug 'mhinz/vim-startify'
@@ -17,10 +17,11 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 " Graph undo tree
 Plug 'sjl/gundo.vim'
+" }}}
 
 
 " ---------------------------------------------------------------------------------------------------------------------
-" Color
+" Color {{{
 " ---------------------------------------------------------------------------------------------------------------------
 " Colorschemes
 Plug 'flazz/vim-colorschemes'
@@ -28,10 +29,11 @@ Plug 'flazz/vim-colorschemes'
 Plug 'lilydjwg/colorizer', { 'for': ['css', 'sass', 'scss', 'less', 'html', 'xhtml', 'javascript', 'javascript.jsx'] }
 " lightline.vim theme for gruvbox
 Plug 'shinchu/lightline-gruvbox.vim'
+" }}}
 
 
 " ---------------------------------------------------------------------------------------------------------------------
-" General functional improvements
+" General functional improvements {{{
 " ---------------------------------------------------------------------------------------------------------------------
 " Extended session management
 Plug 'xolox/vim-session'
@@ -75,10 +77,11 @@ Plug 'vim-scripts/sudo.vim'
 Plug 'thinca/vim-ref'
 " Heuristically set indent options
 Plug 'tpope/vim-sleuth'
+" }}}
 
 
 " ---------------------------------------------------------------------------------------------------------------------
-" Navigation & search
+" Navigation & search {{{
 " ---------------------------------------------------------------------------------------------------------------------
 " Fuzzy file, buffer, mru, tag, etc finder
 Plug 'ctrlpvim/ctrlp.vim'
@@ -100,10 +103,11 @@ Plug 'nelstrom/vim-visual-star-search'
 Plug 'matze/vim-move'
 " Lightning-fast left-right movement
 Plug 'unblevable/quick-scope'
+" }}}
 
 
 " ---------------------------------------------------------------------------------------------------------------------
-" External tool integration
+" External tool integration {{{
 " ---------------------------------------------------------------------------------------------------------------------
 " Helpers for UNIX
 Plug 'tpope/vim-eunuch'
@@ -119,10 +123,11 @@ Plug 'vim-scripts/dbext.vim'
 Plug 'mattn/webapi-vim'
 " Automatically discover and properly update ctags files on save
 Plug 'craigemery/vim-autotag'
+" }}}
 
 
 " ---------------------------------------------------------------------------------------------------------------------
-" VCS
+" VCS {{{
 " ---------------------------------------------------------------------------------------------------------------------
 " Git runtime files
 Plug 'tpope/vim-git'
@@ -132,10 +137,11 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 " Visual git
 Plug 'gregsexton/gitv', { 'on': 'Gitv' }
+" }}}
 
 
 " ---------------------------------------------------------------------------------------------------------------------
-" Text insertion & manipulation
+" Text insertion & manipulation {{{
 " ---------------------------------------------------------------------------------------------------------------------
 " Completion framework
 Plug 'Shougo/deoplete.nvim'
@@ -149,10 +155,11 @@ Plug 'briandoll/change-inside-surroundings.vim'
 Plug 'tpope/vim-abolish'
 " Quoting/parenthesizing
 Plug 'tpope/vim-surround'
+" }}}
 
 
 " ---------------------------------------------------------------------------------------------------------------------
-" General-purpose text objects
+" General-purpose text objects {{{
 " ---------------------------------------------------------------------------------------------------------------------
 " Entire buffer
 Plug 'kana/vim-textobj-entire'
@@ -170,19 +177,21 @@ Plug 'kana/vim-textobj-function'
 Plug 'vim-scripts/argtextobj.vim'
 " Create your own
 Plug 'kana/vim-textobj-user'
+" }}}
 
 
 " ---------------------------------------------------------------------------------------------------------------------
-" Snippets
+" Snippets {{{
 " ---------------------------------------------------------------------------------------------------------------------
 " Snippet engine
 Plug 'SirVer/ultisnips'
 " Base snippets
 Plug 'honza/vim-snippets'
+" }}}
 
 
 " ---------------------------------------------------------------------------------------------------------------------
-" Programming - Language-agnostic
+" Programming - Language-agnostic {{{
 " ---------------------------------------------------------------------------------------------------------------------
 " Pack for many languages
 Plug 'sheerun/vim-polyglot'
@@ -200,10 +209,11 @@ Plug 'nathanaelkane/vim-indent-guides'
 Plug 'AndrewRadev/splitjoin.vim'
 " Add \"end\" in ruby, endfunction/endif/more in vim script, etc
 Plug 'tpope/vim-endwise'
+" }}}
 
 
 " ---------------------------------------------------------------------------------------------------------------------
-" Programming - Elixir & Phoenix
+" Programming - Elixir & Phoenix {{{
 " ---------------------------------------------------------------------------------------------------------------------
 " Mix
 Plug 'mattonrails/vim-mix'
@@ -211,10 +221,11 @@ Plug 'mattonrails/vim-mix'
 Plug 'avdgaag/vim-phoenix'
 " Completion/Doc/Eval
 Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
+" }}}
 
 
 " ---------------------------------------------------------------------------------------------------------------------
-" Programming - Ruby & Rails
+" Programming - Ruby & Rails {{{
 " ---------------------------------------------------------------------------------------------------------------------
 " Bundler
 Plug 'tpope/vim-bundler'
@@ -232,19 +243,21 @@ Plug 'ck3g/vim-change-hash-syntax'
 Plug 'bootleq/vim-textobj-rubysymbol'
 " Text object for selecting blocks
 Plug 'nelstrom/vim-textobj-rubyblock'
+" }}}
 
 
 " ---------------------------------------------------------------------------------------------------------------------
-" Programming - JS
+" Programming - JS {{{
 " ---------------------------------------------------------------------------------------------------------------------
 " Syntax for various libraries
 Plug 'othree/javascript-libraries-syntax.vim'
 " Text objects for functions
 Plug 'thinca/vim-textobj-function-javascript'
+" }}}
 
 
 " ---------------------------------------------------------------------------------------------------------------------
-" Programming - HTML & CSS
+" Programming - HTML & CSS {{{
 " ---------------------------------------------------------------------------------------------------------------------
 " Easily insert custom HTML & CSS
 Plug 'mattn/emmet-vim'
@@ -254,24 +267,27 @@ Plug 'skwp/vim-html-escape'
 Plug 'tpope/vim-ragtag'
 " SCSS syntax
 Plug 'cakebaker/scss-syntax.vim'
+" }}}
 
 
 " ---------------------------------------------------------------------------------------------------------------------
-" Programming - Other languages
+" Programming - Other languages {{{
 " ---------------------------------------------------------------------------------------------------------------------
 " Tmux
 Plug 'jby/tmux.vim'
 " Github-flavored Markdown
 Plug 'jtratner/vim-flavored-markdown'
+" }}}
 
 
 " ---------------------------------------------------------------------------------------------------------------------
-" OS X only
+" OS X only {{{
 " ---------------------------------------------------------------------------------------------------------------------
 " Search Dash.app
 Plug 'rizzatti/dash.vim'
 " Open the current Markdown buffer in Marked.app
 Plug 'itspriddle/vim-marked'
+" }}}
 
 
 call plug#end()
