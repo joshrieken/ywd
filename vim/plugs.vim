@@ -185,7 +185,7 @@ Plug 'sheerun/vim-polyglot'
 " Commenting/uncommenting
 Plug 'tomtom/tcomment_vim'
 " Motion through CamelCaseWords and underscore_notation
-Plug 'vim-scripts/camelcasemotion'
+Plug 'bkad/CamelCaseMotion'
 " Extended % matching for HTML, LaTeX, and many other languages
 Plug 'vim-scripts/matchit.zip'
 " Look up documentation
