@@ -1,6 +1,6 @@
 # Yakko Wakko Dotfiles (YWD)
 
-## **(WARNING: this is currently *alpha* status)**
+## **(WARNING: this is currently *pre-alpha* status)**
 
 Edgy and opinionated set of dotfiles geared towards (but not exclusive to) terminal-centric web development.
 
@@ -27,6 +27,10 @@ Also, they're zany to the max!
     * Linux
 
 # Installation
+
+## Prerequisites
+
+### ZSH
 
 * **Highly Recommended:** Remap Caps Lock to **Control**
 
