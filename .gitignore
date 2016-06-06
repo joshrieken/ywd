@@ -1,15 +1,5 @@
 custom/zsh
 
-vim/vim/backups
-vim/vim/view
 *un~
-vim/vim/.netrwhist
-vim/vim/tmp
-vim/vim/spell
-vim/vim/after/.vimrc.after
-vim/vim/plugged
-vim/vim/sessions
-.netrwhist
 bin/subl
 tags
-init.vim

@@ -27,8 +27,8 @@ let mapleader="\<Space>"
 
 
 " ================ INITIALIZE PLUGS
-if filereadable(expand("~/.vim/plugs.vim"))
-  source ~/.vim/plugs.vim
+if filereadable(expand("~/.config/nvim/plugs.vim"))
+  source ~/.config/nvim/plugs.vim
 endif
 
 
@@ -45,9 +45,9 @@ set nowb
 " ================ PERSISTENT UNDO
 " Keep undo history across sessions, by storing in file.
 " Only works all the time.
-if has('persistent_undo') && !isdirectory(expand('~').'/.vim/backups')
-  silent !mkdir ~/.vim/backups > /dev/null 2>&1
-  set undodir=~/.vim/backups
+if has('persistent_undo') && !isdirectory(expand('~').'/.config/nvim/backups')
+  silent !mkdir ~/.config/nvim/backups > /dev/null 2>&1
+  set undodir=~/.config/nvim/backups
   set undofile
 endif
 
@@ -121,4 +121,4 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 
 " Load settings
-so ~/.vim/settings.vim
+so ~/.config/nvim/settings.vim
