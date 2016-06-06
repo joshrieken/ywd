@@ -121,4 +121,4 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 
 " Load settings
-so ~/.yakko-wakko-dotfiles/vim/settings.vim
+so ~/.vim/settings.vim
