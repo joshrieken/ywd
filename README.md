@@ -1,10 +1,8 @@
 # Yakko Wakko Dotfiles (YWD)
 
+They're zany to the max!
+
 ## **(WARNING: this is currently *pre-alpha* status)**
-
-Edgy and opinionated set of dotfiles geared towards (but not exclusive to) terminal-centric web development.
-
-Also, they're zany to the max!
 
   ![Animaniacs](http://facto-personal.s3.amazonaws.com/github/animaniacs.gif)
 
@@ -13,7 +11,9 @@ Also, they're zany to the max!
 * **Terminal, Terminal, Terminal**
     * Designed from scratch and highly optimized for the terminal. Stay where you play.
 * **Plugins + lazy-loading == awesome**
-    * Continuously updated with the latest and greatest **mature** plugins to aid efficiency. When possible, loading is deferred.
+    * Continuously updated with the latest and greatest tools to aid efficiency.
+        * Lazy-loading is implemented where possible and appropriate.
+        * We try not to duplicate or break existing functionality.
 * **Sane defaults++**
     * Contains detailed configuration for the following language-agnostic tools:
         * Neovim
