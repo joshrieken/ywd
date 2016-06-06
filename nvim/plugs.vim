@@ -30,7 +30,7 @@ Plug 'flazz/vim-colorschemes'
 " Colorize all text in the form #rrggbb or #rgb
 Plug 'lilydjwg/colorizer', { 'for': [
     \ 'css', 'sass', 'scss', 'less',
-    \ 'html', 'xhtml',
+    \ 'html', 'xhtml', 'eruby', 'eelixir',
     \ 'javascript', 'javascript.jsx'
   \]
 \}
