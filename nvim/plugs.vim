@@ -17,6 +17,8 @@ Plug 'ntpeters/vim-better-whitespace'
 Plug 'jeffkreeftmeijer/vim-numbertoggle'
 " Graph undo tree
 Plug 'sjl/gundo.vim'
+" Easy window resizing to a nice size
+Plug 'roman/golden-ratio'
 " }}}
 
 
