@@ -28,7 +28,12 @@ Plug 'roman/golden-ratio'
 " Colorschemes
 Plug 'flazz/vim-colorschemes'
 " Colorize all text in the form #rrggbb or #rgb
-Plug 'lilydjwg/colorizer', { 'for': ['css', 'sass', 'scss', 'less', 'html', 'xhtml', 'javascript', 'javascript.jsx'] }
+Plug 'lilydjwg/colorizer', { 'for': [
+    \ 'css', 'sass', 'scss', 'less',
+    \ 'html', 'xhtml',
+    \ 'javascript', 'javascript.jsx'
+  \]
+\}
 " lightline.vim theme for gruvbox
 Plug 'shinchu/lightline-gruvbox.vim'
 " }}}
