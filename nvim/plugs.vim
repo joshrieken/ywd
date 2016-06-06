@@ -154,8 +154,8 @@ Plug 'gregsexton/gitv', { 'on': 'Gitv' }
 Plug 'Shougo/deoplete.nvim'
 " Alignment
 Plug 'junegunn/vim-easy-align'
-" Auto close parentheses and repeat by dot dot dot<Paste>
-Plug 'cohama/lexima.vim'
+" Auto-close pairable characters
+Plug 'jiangmiao/auto-pairs'
 " Change the contents of the innermost 'surrounding'
 Plug 'briandoll/change-inside-surroundings.vim'
 " Search for, substitute, and abbreviate multiple variants of a word
