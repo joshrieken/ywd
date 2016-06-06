@@ -1,9 +1,15 @@
-"Abbreviations, trigger by typing the abbreviation and hitting space
+" ====== Abbreviations =======
+" Trigger by typing the abbreviation and hitting space.
 
+" Ruby
+abbr pry! require 'pry'; binding.pry
+
+" Rails
 abbr rlb Rails.logger.banner
 abbr rld Rails.logger.debug
-abbr pry! require 'pry'; binding.pry
-abbr cl! console.log( )<left><left>
 
-" Rspec Before
+" Rspec
 abbr rbf before { }<left><left>
+
+" JavaScript
+abbr cl! console.log()<left>
