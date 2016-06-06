@@ -2,7 +2,7 @@
 
 ## Notable Plugins
 
-YWD uses [vim-plug](https://github.com/junegunn/vim-plug) because it's simple, super fast and supports lazy-loading.
+We use [vim-plug](https://github.com/junegunn/vim-plug) because it's simple, super fast, and supports lazy-loading.
 
 ## Cheatsheets
 
@@ -12,7 +12,7 @@ YWD uses [vim-plug](https://github.com/junegunn/vim-plug) because it's simple, s
 
 ### General Bindings
 
-* `<leader>` is `<space>` because it's huge, can be hit with either hand and reduces RSI.
+* `<leader>` is `<space>` because it's huge, can be hit with either hand, and reduces RSI.
 * `,` is the prefix for EasyMotion
 
 ### Interface Bindings
