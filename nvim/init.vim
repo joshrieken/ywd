@@ -1,9 +1,3 @@
-" Note: Skip initialization for vim-tiny or vim-small.
-if 0 | endif
-
-
-
-
 " ================ GENERAL SETTINGS
 set nocompatible
 set encoding=utf8
