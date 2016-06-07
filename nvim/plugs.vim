@@ -273,6 +273,8 @@ Plug 'skwp/vim-html-escape'
 Plug 'tpope/vim-ragtag'
 " SCSS syntax
 Plug 'cakebaker/scss-syntax.vim'
+" Show matching tags
+Plug 'gregsexton/matchtag'
 " }}}
 
 
