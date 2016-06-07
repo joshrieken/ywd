@@ -106,8 +106,6 @@ Plug 'dyng/ctrlsf.vim'
 Plug 'vim-scripts/IndexedSearch'
 " Start a * or # search from a visual block
 Plug 'nelstrom/vim-visual-star-search'
-" Move lines and selections up and down
-Plug 'matze/vim-move'
 " Lightning-fast left-right movement
 Plug 'unblevable/quick-scope'
 " }}}
@@ -162,6 +160,8 @@ Plug 'briandoll/change-inside-surroundings.vim'
 Plug 'tpope/vim-abolish'
 " Quoting/parenthesizing
 Plug 'tpope/vim-surround'
+" Move lines and selections up and down
+Plug 'matze/vim-move'
 " }}}
 
 
