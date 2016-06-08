@@ -1,49 +1,8 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " -----------------------------------------------------------------------------
-" General interface improvements {{{
+" Functionality improvements {{{
 " -----------------------------------------------------------------------------
-" Fancy start screen
-Plug 'mhinz/vim-startify'
-" A light and configurable statusline/tabline
-Plug 'itchyny/lightline.vim'
-" Tree explorer
-Plug 'scrooloose/nerdtree'
-" NERDTree and tabs together
-Plug 'jistr/vim-nerdtree-tabs'
-" Better whitespace highlighting
-Plug 'ntpeters/vim-better-whitespace'
-" Toggle between relative and absolute line numbers automatically
-Plug 'jeffkreeftmeijer/vim-numbertoggle'
-" Graph undo tree
-Plug 'sjl/gundo.vim'
-" Easy window resizing to a nice size
-Plug 'roman/golden-ratio'
-" }}}
-
-
-" -----------------------------------------------------------------------------
-" Color {{{
-" -----------------------------------------------------------------------------
-" Colorschemes
-Plug 'flazz/vim-colorschemes'
-" Colorize all text in the form #rrggbb or #rgb
-Plug 'lilydjwg/colorizer', { 'for': [
-    \ 'css', 'sass', 'scss', 'less',
-    \ 'html', 'xhtml', 'eruby', 'eelixir',
-    \ 'javascript', 'javascript.jsx'
-  \]
-\}
-" lightline.vim theme for gruvbox
-Plug 'shinchu/lightline-gruvbox.vim'
-" }}}
-
-
-" -----------------------------------------------------------------------------
-" General functional improvements {{{
-" -----------------------------------------------------------------------------
-" Extended session management
-Plug 'xolox/vim-session'
 " Continuously update session files
 Plug 'tpope/vim-obsession'
 " Open a file in a given line
@@ -88,6 +47,45 @@ Plug 'tpope/vim-sleuth'
 
 
 " -----------------------------------------------------------------------------
+" Interface improvements {{{
+" -----------------------------------------------------------------------------
+" Fancy start screen
+Plug 'mhinz/vim-startify'
+" A light and configurable statusline/tabline
+Plug 'itchyny/lightline.vim'
+" Tree explorer
+Plug 'scrooloose/nerdtree'
+" NERDTree and tabs together
+Plug 'jistr/vim-nerdtree-tabs'
+" Better whitespace highlighting
+Plug 'ntpeters/vim-better-whitespace'
+" Toggle between relative and absolute line numbers automatically
+Plug 'jeffkreeftmeijer/vim-numbertoggle'
+" Graph undo tree
+Plug 'sjl/gundo.vim'
+" Easy window resizing to a nice size
+Plug 'roman/golden-ratio'
+" }}}
+
+
+" -----------------------------------------------------------------------------
+" Color {{{
+" -----------------------------------------------------------------------------
+" Colorschemes
+Plug 'flazz/vim-colorschemes'
+" Colorize all text in the form #rrggbb or #rgb
+Plug 'lilydjwg/colorizer', { 'for': [
+    \ 'css', 'sass', 'scss', 'less',
+    \ 'html', 'xhtml', 'eruby', 'eelixir',
+    \ 'javascript', 'javascript.jsx'
+  \]
+\}
+" lightline.vim theme for gruvbox
+Plug 'shinchu/lightline-gruvbox.vim'
+" }}}
+
+
+" -----------------------------------------------------------------------------
 " Navigation & search {{{
 " -----------------------------------------------------------------------------
 " Fuzzy file, buffer, mru, tag, etc finder
@@ -99,7 +97,7 @@ Plug 'easymotion/vim-easymotion'
 " Global search and replace
 Plug 'skwp/greplace.vim'
 " Enhanced multi-file search
-Plug 'wincent/ferret'
+" Plug 'wincent/ferret'
 " An ack.vim alternative that mimics Ctrl-Shift-F on Sublime Text
 Plug 'dyng/ctrlsf.vim'
 " Shows 'Nth match out of M' at every search (index of match+total # matches)
@@ -108,6 +106,8 @@ Plug 'vim-scripts/IndexedSearch'
 Plug 'nelstrom/vim-visual-star-search'
 " Lightning-fast left-right movement
 Plug 'unblevable/quick-scope'
+" Don't auto-jump to next result on initial *
+" Plug 'ironhouzi/vim-stim'
 " }}}
 
 
