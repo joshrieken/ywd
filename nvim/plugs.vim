@@ -9,8 +9,8 @@ Plug 'tpope/vim-obsession'
 Plug 'dhruvasagar/vim-prosession'
 " Open a file in a given line
 Plug 'bogado/file-line'
-" Display location marks
-Plug 'xsunsmile/showmarks'
+" Tool for easily managing marks and displaying them in the gutter
+Plug 'kshenoy/vim-signature'
 " Seamless navigation between tmux panes and vim splits
 Plug 'christoomey/vim-tmux-navigator'
 " Delete buffers and close files without closing your windows or messing up your layout
