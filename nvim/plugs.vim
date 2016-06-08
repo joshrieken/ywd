@@ -5,6 +5,8 @@ call plug#begin('~/.config/nvim/plugged')
 " -----------------------------------------------------------------------------
 " Continuously update session files
 Plug 'tpope/vim-obsession'
+" Allow smooth switching of sessions while Neovim is open
+Plug 'dhruvasagar/vim-prosession'
 " Open a file in a given line
 Plug 'bogado/file-line'
 " Display location marks
