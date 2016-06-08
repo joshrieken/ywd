@@ -10,7 +10,7 @@ We use [vim-plug](https://github.com/junegunn/vim-plug) because it's simple, sup
 
 * When the filetype is `text`, `markdown`, or `ghmarkdown`, wrapping is enabled.
 
-### Functional Improvement Mappings
+### Functionality Improvement Mappings
 
 * `<leader>` is `<space>` because it's huge, can be hit with either hand, and reduces RSI.
 * `,` is the prefix for EasyMotion
