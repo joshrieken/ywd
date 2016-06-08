@@ -8,19 +8,22 @@ They're zany to the max!
 
 # High-Level Overview
 
+Yakko Wakko Dotfiles (YWD) is an ***opinionated*** set of dotfiles carefully put together with a few things in mind.
+
 * **Terminal, Terminal, Terminal**
     * Designed from scratch and highly optimized for the terminal. Stay where you play.
-* **Plugins + lazy-loading == awesome**
-    * Continuously updated with the latest and greatest tools to aid efficiency.
-        * Lazy-loading is implemented where possible and appropriate.
-        * We try not to duplicate or break existing functionality.
+* **Lots of plugins + lazy-loading == awesome**
+    * Yes, it's possible to have an acceptably speedy development experience with a crap-ton of plugins.
+    * YWD is continuously updated with the latest and greatest tools to aid efficiency.
+    * We try not to duplicate or break existing functionality unless it makes sense for efficiency and/or RSI-reduction purposes.
 * **Sane defaults++**
-    * Contains detailed configuration for the following language-agnostic tools:
+    * Contains configuration for the following language-agnostic tools:
         * Neovim
         * Tmux
         * ZSH (built on a [prezto](http://github.com/sorin-ionescu/prezto) base)
         * Git
-* **Override and Extend**
+* **Extendable**
+    * Want to add your own plugins? Not happy with some of the defaults? It's all easy to change.
 * **Supports OS X *and* Linux**
     * OS X
         * Easily install my favorite OS X hacks (**WARNING:** You must understand what all of these are before installing! Check the comments.)
