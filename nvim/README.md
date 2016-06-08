@@ -17,7 +17,7 @@ We use [vim-plug](https://github.com/junegunn/vim-plug) because it's simple, sup
 
 ### Interface Mappings
 
-* `<C-\>` opens NERDTree
+* `<C-\>` toggles NERDTree (works smoothly with tabs)
 * `<leader>\` opens NERDTree navigated to the current file
 
 ### Movement & Search Bindings
