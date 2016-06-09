@@ -1,7 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 " -----------------------------------------------------------------------------
-" Functionality improvements {{{
+" General functionality improvements {{{
 " -----------------------------------------------------------------------------
 " Continuously update session files
 Plug 'tpope/vim-obsession'
@@ -67,12 +67,6 @@ Plug 'jeffkreeftmeijer/vim-numbertoggle'
 Plug 'sjl/gundo.vim'
 " Easy window resizing to a nice size
 Plug 'roman/golden-ratio'
-" }}}
-
-
-" -----------------------------------------------------------------------------
-" Color {{{
-" -----------------------------------------------------------------------------
 " Colorschemes
 Plug 'flazz/vim-colorschemes'
 " Colorize all text in the form #rrggbb or #rgb
@@ -202,6 +196,7 @@ Plug 'honza/vim-snippets'
 " -----------------------------------------------------------------------------
 " Programming - Language-agnostic {{{
 " -----------------------------------------------------------------------------
+" Master language pack
 Plug 'sheerun/vim-polyglot'
 " Commenting/uncommenting
 Plug 'tomtom/tcomment_vim'
@@ -227,7 +222,7 @@ Plug 'tpope/vim-endwise'
 Plug 'mattonrails/vim-mix'
 " Phoenix framework
 Plug 'avdgaag/vim-phoenix'
-" Completion/Doc/Eval
+" Completion/doc/eval w/ deoplete integration
 Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
 " }}}
 
