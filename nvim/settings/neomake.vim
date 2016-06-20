@@ -16,6 +16,6 @@ autocmd BufWritePost *.ex,*.exs Neomake elixir
 autocmd BufWritePost *.html Neomake tidy
 autocmd BufWritePost *.haml Neomake hamllint
 autocmd BufWritePost *.scss Neomake scsslint
-autocmd BufWritePost *.md Neomake mdl
+" autocmd BufWritePost *.md Neomake mdl
 autocmd BufWritePost *.sh Neomake shellcheck
-autocmd BufWritePost *.vim Neomake vint
+" autocmd BufWritePost *.vim Neomake vint

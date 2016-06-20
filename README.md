@@ -33,6 +33,22 @@ Yakko Wakko Dotfiles (YWD) is an ***opinionated*** set of dotfiles carefully put
 
 ## Prerequisites
 
+* Neovim
+* tmux
+* Git
+* Node.js
+* Ruby
+* Python 3
+* Elixir
+* Tidy
+* Shellcheck
+
+" npm install -g eslint jsonlint typescript
+" gem install rubocop haml_lint scss_lint mdl
+" pip3 install vim-vint
+" apt-get install elixir shellcheck tidy
+" brew install elixir shellcheck tidy-html5
+
 ## Post-Install
 
 * Remap Caps Lock to **Control**.

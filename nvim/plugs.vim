@@ -3,17 +3,17 @@ call plug#begin('~/.config/nvim/plugged')
 " -----------------------------------------------------------------------------
 " General functionality improvements {{{
 " -----------------------------------------------------------------------------
-" Continuously update session files
+"* Continuously update session files
 Plug 'tpope/vim-obsession'
-" Allow smooth switching of sessions while Neovim is open
+"* Allow smooth switching of sessions while Neovim is open
 Plug 'dhruvasagar/vim-prosession'
-" Open a file in a given line
+"* Open a file in a given line
 Plug 'bogado/file-line'
-" Tool for easily managing marks and displaying them in the gutter
+"* Tool for easily managing marks and displaying them in the gutter
 Plug 'kshenoy/vim-signature'
-" Seamless navigation between tmux panes and vim splits
+"* Seamless navigation between tmux panes and vim splits
 Plug 'christoomey/vim-tmux-navigator'
-" Delete buffers and close files without messing up the layouk
+"* Delete buffers and close files without messing up the layouk
 Plug 'mhinz/vim-sayonara'
 " Asynchronous :make using Neovim's job-control functionality
 Plug 'benekastah/neomake', { 'on': ['Neomake'] }
