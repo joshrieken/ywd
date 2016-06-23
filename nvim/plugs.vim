@@ -13,8 +13,8 @@ Plug 'bogado/file-line'
 Plug 'kshenoy/vim-signature'
 " Seamless navigation between tmux panes and vim splits
 Plug 'christoomey/vim-tmux-navigator'
-" Delete buffers and close files without messing up the layouk
-Plug 'mhinz/vim-sayonara'
+" Delete buffers and close files without messing up the layout
+Plug 'moll/vim-bbye'
 " Asynchronous :make using Neovim's job-control functionality
 Plug 'benekastah/neomake', { 'on': ['Neomake'] }
 " Narrow Region (like Emacs Narrow Region)
