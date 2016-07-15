@@ -148,3 +148,75 @@ endsnippet
 snippet ipry "insert IEx pry for debugging" !b
 require IEx; IEx.pry
 endsnippet
+
+snippet	ip "insert IO.puts" !b
+IO.puts
+endsnippet
+
+snippet	ii "insert IO.inspect" !b
+IO.inspect
+endsnippet
+
+snippet con "insert an ESpec context" !b
+context "${1}"
+endsnippet
+
+snippet context "insert an ESpec context with block" !b
+context "${1}" do
+  ${2}
+end
+endsnippet
+
+snippet des "insert an ESpec describe" !b
+describe "${1}"
+endsnippet
+
+snippet describe "insert an ESpec describe with block" !b
+describe "${1}" do
+  ${2}
+end
+endsnippet
+
+snippet lt "insert an ESpec let on one line" !b
+let :${1:name}, do: ${2}
+endsnippet
+
+snippet let "insert an ESpec let" !b
+let :${1:name} do
+  ${2}
+end
+endsnippet
+
+snippet sub "insert an ESpec subject on one line" !b
+subject do: ${1}
+endsnippet
+
+snippet subj "insert an ESpec subject" !b
+subject do
+	${1}
+end
+endsnippet
+
+snippet it "insert an ESpec it on one line" !b
+it do: ${1}
+endsnippet
+
+snippet itd "insert an ESpec it with a do" !b
+it "${1}" do
+  ${2}
+end
+endsnippet
+
+snippet before "insert an ESpec before with block" !b
+before do
+  ${1}
+end
+endsnippet
+
+snippet allow "insert an ESpec allow" !b
+allow ${1} |> to(${2})
+endsnippet
+
+snippet	expect "insert an ESpec expect" !b
+expect ${1} |> to(${2})
+endsnippet
