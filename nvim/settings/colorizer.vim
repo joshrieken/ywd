@@ -1,0 +1,1 @@
+nmap ,tc <Plug>Colorizer
