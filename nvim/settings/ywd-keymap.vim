@@ -159,3 +159,6 @@ imap <C-c> <ESC>
 
 " Easily switch between light and dark modes
 nmap <Leader>cb :let &background = ( &background == "dark"? "light" : "dark" )<CR>
+
+" Properly position cursor after hitting <CR> within an HTML tag, for example
+inoremap <leader><CR> <CR><C-o>==<C-o>O
