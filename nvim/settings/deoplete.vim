@@ -1,7 +1,8 @@
 let g:deoplete#enable_at_startup = 1
 let g:deoplate#enable_camel_case = 1
 let g:deoplete#enable_smart_case = 1
-let g:deoplete#max_list = 10
+let g:deoplete#max_list = 50
+let g:deoplete#auto_completion_start_length = 4
 
 inoremap <C-Space> <C-n>
 
