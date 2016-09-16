@@ -162,3 +162,5 @@ nmap <Leader>cb :let &background = ( &background == "dark"? "light" : "dark" )<C
 
 " Properly position cursor after hitting <CR> within an HTML tag, for example
 inoremap <leader><CR> <CR><C-o>==<C-o>O
+
+nmap <leader>w :w<CR>
