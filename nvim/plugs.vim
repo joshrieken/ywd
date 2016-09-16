@@ -45,6 +45,8 @@ Plug 'vim-scripts/sudo.vim'
 Plug 'thinca/vim-ref'
 " Heuristically set indent options
 Plug 'tpope/vim-sleuth'
+" Update folds only when asked
+Plug 'Konfekt/FastFold'
 " }}}
 
 
