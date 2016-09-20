@@ -18,8 +18,8 @@ alias -g ....='../../..'
 alias -g .....='../../../..'
 alias -g C='| wc -l'
 alias -g H='| head'
-alias -g L="| less"
-alias -g N="| /dev/null"
+alias -g L='| less'
+alias -g N='| /dev/null'
 alias -g S='| sort'
 alias -g G='| grep' # now you can do: ls foo G something
 
@@ -28,8 +28,8 @@ alias -g G='| grep' # now you can do: ls foo G something
 alias es="exec $SHELL"
 
 # PS
-alias psa="ps aux"
-alias psg="ps aux | grep "
+alias psa='ps aux'
+alias psg='ps aux | grep '
 alias psr='ps aux | grep ruby'
 
 # Moving around
@@ -136,13 +136,13 @@ alias k9='kill -9'
 alias gz='tar -zcvf'
 
 # tmux
-alias ta="tmux a"
-alias tat="tmux a -t"
-alias tls="tmux ls"
-alias tns="tmux new -s"
-alias tkserver="tmux kill-server"
-alias tks="tmux kill-session -t"
-alias tss="tmux start-server"
+alias ta='tmux a'
+alias tat='tmux a -t'
+alias tls='tmux ls'
+alias tns='tmux new -s'
+alias tkserver='tmux kill-server'
+alias tks='tmux kill-session -t'
+alias tss='tmux start-server'
 
 # fasd
 alias a='fasd -a'        # any
