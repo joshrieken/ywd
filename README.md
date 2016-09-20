@@ -47,5 +47,5 @@ See [the README](https://github.com/facto/ywd/tree/master/nvim) for a list of pl
 
 Thanks to the following projects for heavy inspiration:
 
-* [skwp/dotfiles](https://github.com/skwp/dotfiles)
+* [skwp/dotfiles](https://github.com/skwp/dotfiles) (provided VERY heavy inspiration)
 * [martin-svk/dot-files](http://github.com/martin-svk/dot-files)
