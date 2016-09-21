@@ -193,9 +193,20 @@ install_neovim_plugins() {
 }
 
 
+abs_path() {
+  if [ -d "$1" ]; then
+    (cd "$1" && pwd)
+  elif [ -e "$1" ]; then
+    (cd "$(dirname "$1")" && echo "$(pwd)/$(basename "$1")")
+  else
+    echo "$1" does not exist! >&2 && exit 1
+  fi
+}
+
+
 create_link_with_backup() {
-  filename=$1
-  link_source=$2
+  filename="$(abs_path "$1")"
+  link_source="$(abs_path "$2")"
   backup_filename="$filename-$(date +"%Y%m%d%H%M%S")-$(./rand.sh).bak"
 
   echo ''
