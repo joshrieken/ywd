@@ -193,20 +193,9 @@ install_neovim_plugins() {
 }
 
 
-abs_path() {
-  if [ -d "$1" ]; then
-    (cd "$1" && pwd)
-  elif [ -e "$1" ]; then
-    (cd "$(dirname "$1")" && echo "$(pwd)/$(basename "$1")")
-  else
-    echo "$1" does not exist! >&2 && exit 1
-  fi
-}
-
-
 create_link_with_backup() {
-  filename="$(abs_path "$1")"
-  link_source="$(abs_path "$2")"
+  filename="$1"
+  link_source="$2"
   backup_filename="$filename-$(date +"%Y%m%d%H%M%S")-$(./rand.sh).bak"
 
   echo ''
@@ -217,12 +206,14 @@ create_link_with_backup() {
       cp "$filename" "$backup_filename"
       echo "Removing original $filename..."
       rm "$filename"
-
       echo "Linking new $filename..."
       ln -nfs "$link_source" "$filename"
     else
       echo "Already linked: $filename"
     fi
+  else
+    echo "Linking new $filename..."
+    ln -nfs "$link_source" "$filename"
   fi
 
   echo ''
@@ -232,26 +223,26 @@ create_link_with_backup() {
 link_config_files() {
   echo 'Linking config files...'
 
-  create_link_with_backup ~/.agignore ~/.ywd/ag/agignore
-  create_link_with_backup ~/.aprc ~/.ywd/irb/aprc
-  create_link_with_backup ~/.ctags ~/.ywd/ctags/ctags
-  create_link_with_backup ~/.editrc ~/.ywd/editline/editrc
-  create_link_with_backup ~/.escaped_colors.rb ~/.ywd/irb/escaped_colors.rb
-  create_link_with_backup ~/.gemrc ~/.ywd/ruby/gemrc
-  create_link_with_backup ~/.gitconfig ~/.ywd/git/gitconfig
-  create_link_with_backup ~/.gitignore ~/.ywd/git/gitignore
-  create_link_with_backup ~/.inputrc ~/.ywd/readline/inputrc
-  create_link_with_backup ~/.pryrc ~/.ywd/irb/pryrc
-  create_link_with_backup ~/.rdebugrc ~/.ywd/ruby/rdebugrc
-  create_link_with_backup ~/.tmux.conf ~/.ywd/tmux/tmux.conf
-  create_link_with_backup ~/.unescaped_colors.rb ~/.ywd/irb/unescaped_colors.rb
-  create_link_with_backup ~/.zlogin ~/.ywd/zsh/prezto/runcoms/zlogin
-  create_link_with_backup ~/.zlogout ~/.ywd/zsh/prezto/runcoms/zlogout
-  create_link_with_backup ~/.zprezto ~/.ywd/zsh/prezto
-  create_link_with_backup ~/.zpreztorc ~/.ywd/zsh/prezto-override
-  create_link_with_backup ~/.zprofile ~/.ywd/zsh/prezto/runcoms/zprofile
-  create_link_with_backup ~/.zshenv ~/.ywd/zsh/prezto/runcoms/zshenv
-  create_link_with_backup ~/.zshrc ~/.ywd/zsh/prezto/runcoms/zshrc
+  create_link_with_backup "$HOME/.agignore" "$HOME/.ywd/ag/agignore"
+  create_link_with_backup "$HOME/.aprc" "$HOME/.ywd/irb/aprc"
+  create_link_with_backup "$HOME/.ctags" "$HOME/.ywd/ctags/ctags"
+  create_link_with_backup "$HOME/.editrc" "$HOME/.ywd/editline/editrc"
+  create_link_with_backup "$HOME/.escaped_colors.rb" "$HOME/.ywd/irb/escaped_colors.rb"
+  create_link_with_backup "$HOME/.gemrc" "$HOME/.ywd/ruby/gemrc"
+  create_link_with_backup "$HOME/.gitconfig" "$HOME/.ywd/git/gitconfig"
+  create_link_with_backup "$HOME/.gitignore" "$HOME/.ywd/git/gitignore"
+  create_link_with_backup "$HOME/.inputrc" "$HOME/.ywd/readline/inputrc"
+  create_link_with_backup "$HOME/.pryrc" "$HOME/.ywd/irb/pryrc"
+  create_link_with_backup "$HOME/.rdebugrc" "$HOME/.ywd/ruby/rdebugrc"
+  create_link_with_backup "$HOME/.tmux.conf" "$HOME/.ywd/tmux/tmux.conf"
+  create_link_with_backup "$HOME/.unescaped_colors.rb" "$HOME/.ywd/irb/unescaped_colors.rb"
+  create_link_with_backup "$HOME/.zlogin" "$HOME/.ywd/zsh/prezto/runcoms/zlogin"
+  create_link_with_backup "$HOME/.zlogout" "$HOME/.ywd/zsh/prezto/runcoms/zlogout"
+  create_link_with_backup "$HOME/.zprezto" "$HOME/.ywd/zsh/prezto"
+  create_link_with_backup "$HOME/.zpreztorc" "$HOME/.ywd/zsh/prezto-override"
+  create_link_with_backup "$HOME/.zprofile" "$HOME/.ywd/zsh/prezto/runcoms/zprofile"
+  create_link_with_backup "$HOME/.zshenv" "$HOME/.ywd/zsh/prezto/runcoms/zshenv"
+  create_link_with_backup "$HOME/.zshrc" "$HOME/.ywd/zsh/prezto/runcoms/zshrc"
 
   mkdir -p ~/.config
   create_link_with_backup ~/.config/nvim ~/.ywd/nvim
