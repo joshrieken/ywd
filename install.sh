@@ -217,13 +217,13 @@ create_link_with_backup() {
       cp "$filename" "$backup_filename"
       echo "Removing original $filename..."
       rm "$filename"
+
+      echo "Linking new $filename..."
+      ln -nfs "$link_source" "$filename"
     else
       echo "Already installed: $filename"
     fi
   fi
-
-  echo "Linking new $filename..."
-  ln -nfs "$link_source" "$filename"
 
   echo ''
 }
