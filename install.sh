@@ -221,7 +221,7 @@ create_link_with_backup() {
       echo "Linking new $filename..."
       ln -nfs "$link_source" "$filename"
     else
-      echo "Already installed: $filename"
+      echo "Already linked: $filename"
     fi
   fi
 
