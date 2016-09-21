@@ -273,6 +273,6 @@ init_and_update_submodules
 install_packages
 install_zsh
 install_fonts
-install_neovim_plugins
 link_config_files
+install_neovim_plugins
 print_end_message
