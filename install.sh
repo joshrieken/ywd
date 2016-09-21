@@ -160,13 +160,15 @@ install_zsh() {
 
 
 install_packages_using_dnf() {
-  # Exit if pip is not installed
-  which pip || { echo 'Pip must be installed'; exit 1; }
+  # Exit if Python 3 is not installed
+  which python3 || { echo 'Python 3 must be installed'; exit 1; }
 
+  echo 'Installing pip for Python 3...'
+  sudo dnf -y install python3-pip
   echo 'Upgrading pip...'
-  sudo pip install --upgrade pip
+  sudo python3 -m pip install --upgrade pip
   echo 'Installing necessary prerequisites with pip...'
-  sudo pip install neovim
+  sudo python3 -m pip install neovim
 
   echo 'Installing packages...'
   sudo dnf -y install python2-greenlet-devel dnf-plugins-core
