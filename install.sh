@@ -211,7 +211,7 @@ create_link_with_backup() {
 
   echo ''
 
-  if [ -f "$filename" ]; then
+  if [ -e "$filename" ]; then
     if [ "$(readlink -- "$filename")" != "$link_source" ]; then
       echo "Backing up $filename to $backup_filename..."
       cp "$filename" "$backup_filename"
