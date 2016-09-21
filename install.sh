@@ -253,6 +253,9 @@ link_config_files() {
   create_link_with_backup ~/.zshenv ~/.ywd/zsh/prezto/runcoms/zshenv
   create_link_with_backup ~/.zshrc ~/.ywd/zsh/prezto/runcoms/zshrc
 
+  mkdir -p ~/.config
+  create_link_with_backup ~/.config/nvim ~/.ywd/nvim
+
   echo 'Done linking config files.'
 }
 
