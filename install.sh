@@ -9,12 +9,12 @@ trap '
 ywd_root="$HOME/.ywd"
 
 print_start_message() {
-  echo ""
-  echo ""
-  echo "Installing..."
-  echo ""
-  echo ""
-  echo ""
+  echo ''
+  echo ''
+  echo 'Installing...'
+  echo ''
+  echo ''
+  echo ''
 
   cat << "EndOfMessage"
                                                  .-'''-.
@@ -56,16 +56,20 @@ _______        '   _    \                  .---.
                           `'-'    |_|
 EndOfMessage
 
-  echo ""
-  echo ""
-  echo ""
+  echo ''
+  echo ''
+  echo ''
 }
 
 
 print_end_message() {
-  echo ""
-  echo ""
-  echo "Finished installing YWD! Have Fun!"
+  echo ''
+  echo 'Finished installing YWD! Have Fun!'
+}
+
+
+print_separator() {
+  echo ''
 }
 
 
@@ -149,9 +153,9 @@ contains() {
 
 install_zsh() {
   echo 'Creating directories for your ZSH customizations...'
-  mkdir -p "$HOME/.zsh.before"
-  mkdir -p "$HOME/.zsh.after"
-  mkdir -p "$HOME/.zsh.prompts"
+  mkdir -p "$HOME"/.zsh.before
+  mkdir -p "$HOME"/.zsh.after
+  mkdir -p "$HOME"/.zsh.prompts
 
   case "$SHELL" in
     *zsh*)
@@ -195,9 +199,11 @@ install_fonts() {
 
   case "$current_platform" in
     linux)
-      mkdir -p "$HOME/.fonts" && cp "$ywd_root/fonts/*" "$HOME/.fonts" && fc-cache -vf "$HOME/.fonts"
+      mkdir -p "$HOME"/.fonts && cp "$ywd_root"/fonts/* "$HOME"/.fonts && fc-cache -vf "$HOME"/.fonts
       ;;
   esac
+
+  echo 'Finished installing patched fonts for Powerline/Lightline.'
 }
 
 
@@ -205,7 +211,7 @@ install_neovim_plugins() {
   echo 'Installing neovim plugins...'
 
   # Use a minimalist config while installing plugs.
-  nvim -c 'PlugInstall' -c 'UpdateRemotePlugins' -c 'qall' -u "$ywd_root/nvim/init.first.vim"
+  nvim -c 'PlugInstall' -c 'UpdateRemotePlugins' -c 'qall' -u "$ywd_root"/nvim/init.first.vim
 
   echo 'Done installing neovim plugins.'
 }
@@ -241,29 +247,29 @@ create_link_with_backup() {
 link_config_files() {
   echo 'Linking config files...'
 
-  create_link_with_backup "$HOME/.agignore" "$ywd_root/ag/agignore"
-  create_link_with_backup "$HOME/.aprc" "$ywd_root/irb/aprc"
-  create_link_with_backup "$HOME/.ctags" "$ywd_root/ctags/ctags"
-  create_link_with_backup "$HOME/.editrc" "$ywd_root/editline/editrc"
-  create_link_with_backup "$HOME/.escaped_colors.rb" "$ywd_root/irb/escaped_colors.rb"
-  create_link_with_backup "$HOME/.gemrc" "$ywd_root/ruby/gemrc"
-  create_link_with_backup "$HOME/.gitconfig" "$ywd_root/git/gitconfig"
-  create_link_with_backup "$HOME/.gitignore" "$ywd_root/git/gitignore"
-  create_link_with_backup "$HOME/.inputrc" "$ywd_root/readline/inputrc"
-  create_link_with_backup "$HOME/.pryrc" "$ywd_root/irb/pryrc"
-  create_link_with_backup "$HOME/.rdebugrc" "$ywd_root/ruby/rdebugrc"
-  create_link_with_backup "$HOME/.tmux.conf" "$ywd_root/tmux/tmux.conf"
-  create_link_with_backup "$HOME/.unescaped_colors.rb" "$ywd_root/irb/unescaped_colors.rb"
-  create_link_with_backup "$HOME/.zlogin" "$ywd_root/zsh/prezto/runcoms/zlogin"
-  create_link_with_backup "$HOME/.zlogout" "$ywd_root/zsh/prezto/runcoms/zlogout"
-  create_link_with_backup "$HOME/.zprezto" "$ywd_root/zsh/prezto"
-  create_link_with_backup "$HOME/.zpreztorc" "$ywd_root/zsh/prezto-override"
-  create_link_with_backup "$HOME/.zprofile" "$ywd_root/zsh/prezto/runcoms/zprofile"
-  create_link_with_backup "$HOME/.zshenv" "$ywd_root/zsh/prezto/runcoms/zshenv"
-  create_link_with_backup "$HOME/.zshrc" "$ywd_root/zsh/prezto/runcoms/zshrc"
+  create_link_with_backup "$HOME"/.agignore "$ywd_root"/ag/agignore
+  create_link_with_backup "$HOME"/.aprc "$ywd_root"/irb/aprc
+  create_link_with_backup "$HOME"/.ctags "$ywd_root"/ctags/ctags
+  create_link_with_backup "$HOME"/.editrc "$ywd_root"/editline/editrc
+  create_link_with_backup "$HOME"/.escaped_colors.rb "$ywd_root"/irb/escaped_colors.rb
+  create_link_with_backup "$HOME"/.gemrc "$ywd_root"/ruby/gemrc
+  create_link_with_backup "$HOME"/.gitconfig "$ywd_root"/git/gitconfig
+  create_link_with_backup "$HOME"/.gitignore "$ywd_root"/git/gitignore
+  create_link_with_backup "$HOME"/.inputrc "$ywd_root"/readline/inputrc
+  create_link_with_backup "$HOME"/.pryrc "$ywd_root"/irb/pryrc
+  create_link_with_backup "$HOME"/.rdebugrc "$ywd_root"/ruby/rdebugrc
+  create_link_with_backup "$HOME"/.tmux.conf "$ywd_root"/tmux/tmux.conf
+  create_link_with_backup "$HOME"/.unescaped_colors.rb "$ywd_root"/irb/unescaped_colors.rb
+  create_link_with_backup "$HOME"/.zlogin "$ywd_root"/zsh/prezto/runcoms/zlogin
+  create_link_with_backup "$HOME"/.zlogout "$ywd_root"/zsh/prezto/runcoms/zlogout
+  create_link_with_backup "$HOME"/.zprezto "$ywd_root"/zsh/prezto
+  create_link_with_backup "$HOME"/.zpreztorc "$ywd_root"/zsh/prezto-override
+  create_link_with_backup "$HOME"/.zprofile "$ywd_root"/zsh/prezto/runcoms/zprofile
+  create_link_with_backup "$HOME"/.zshenv "$ywd_root"/zsh/prezto/runcoms/zshenv
+  create_link_with_backup "$HOME"/.zshrc "$ywd_root"/zsh/prezto/runcoms/zshrc
 
-  mkdir -p "$HOME/.config"
-  create_link_with_backup "$HOME/.config/nvim" "$ywd_root/nvim"
+  mkdir -p "$HOME"/.config
+  create_link_with_backup "$HOME"/.config/nvim "$ywd_root"/nvim
 
   echo 'Done linking config files.'
 }
