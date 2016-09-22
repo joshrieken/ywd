@@ -169,10 +169,16 @@ install_zsh() {
 }
 
 
-install_tpm() {
+install_tmux_plugins() {
   echo 'Installing Tmux Plugin Manager...'
   git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
   echo 'Done installing Tmux Plugin Manager.'
+
+  echo 'Installing TPM plugins...'
+
+  "$HOME"/.tmux/plugins/tpm/bin/install_plugins
+
+  echo 'Done installing TPM plugins.'
 }
 
 
@@ -287,7 +293,7 @@ print_start_message
 init_and_update_submodules
 install_packages
 install_zsh
-install_tpm
+install_tmux_plugins
 install_fonts
 link_config_files
 install_neovim_plugins
