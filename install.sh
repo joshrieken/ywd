@@ -165,6 +165,13 @@ install_zsh() {
 }
 
 
+install_tpm() {
+  echo 'Installing Tmux Plugin Manager...'
+  git clone https://github.com/tmux-plugins/tpm "$HOME/.tmux/plugins/tpm"
+  echo 'Done installing Tmux Plugin Manager.'
+}
+
+
 install_packages_using_dnf() {
   # Exit if Python 3 is not installed
   which python3 || { echo 'Python 3 must be installed'; exit 1; }
@@ -274,6 +281,7 @@ print_start_message
 init_and_update_submodules
 install_packages
 install_zsh
+install_tpm
 install_fonts
 link_config_files
 install_neovim_plugins
