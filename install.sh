@@ -1,5 +1,11 @@
 #!/bin/sh
 
+# Kill ourself when receiving a SIGINT.
+trap '
+  trap - INT # restore default INT handler
+  kill -s INT "$$"
+' INT
+
 ywd_root=~/.ywd
 
 print_start_message() {
