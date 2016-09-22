@@ -191,7 +191,13 @@ install_fonts() {
 install_neovim_plugins() {
   echo 'Installing neovim plugins...'
 
+  # Use a minimalist config while installing plugs,
+  # then switch back to the actual one.
+  mv ~/.ywd/nvim/init.vim ~/.ywd/nvim/init.actual.vim
+  mv ~/.ywd/nvim/init.first.vim ~/.ywd/nvim/init.vim
   nvim -c 'PlugInstall' -c 'UpdateRemotePlugins' -c 'qall'
+  mv ~/.ywd/nvim/init.vim ~/.ywd/nvim/init.first.vim
+  mv ~/.ywd/nvim/init.actual.vim ~/.ywd/nvim/init.vim
 }
 
 
