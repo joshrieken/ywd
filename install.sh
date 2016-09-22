@@ -59,7 +59,7 @@ EndOfMessage
 print_end_message() {
   echo ""
   echo ""
-  echo "Finished install YWD! Have Fun!"
+  echo "Finished installing YWD! Have Fun!"
 }
 
 
