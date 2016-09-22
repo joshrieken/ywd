@@ -1,1 +1,1 @@
-prompt minimal
+prompt steeef_simplified
