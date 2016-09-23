@@ -18,6 +18,11 @@ syntax on
 let mapleader="\<Space>"
 
 
+" ================ BEFORE-HOOK FOR USER CONFIGS
+for fpath in split(globpath('~/.ywd.local/vim/before', '*.vim'), '\n')
+  exe 'source' fpath
+endfor
+
 
 
 " ================ INITIALIZE PLUGS
@@ -116,3 +121,10 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " Load settings
 so ~/.config/nvim/settings.vim
+
+
+
+" ================ AFTER-HOOK FOR USER CONFIGS
+for fpath in split(globpath('~/.ywd.local/vim/after', '*.vim'), '\n')
+  exe 'source' fpath
+endfor

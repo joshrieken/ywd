@@ -6,7 +6,8 @@ trap '
   kill -s INT "$$"
 ' INT
 
-ywd_root="$HOME/.ywd"
+ywd_root="$HOME"/.ywd
+ywd_local_root="$HOME"/.ywd.local
 
 print_start_message() {
   echo ''
@@ -152,11 +153,6 @@ contains() {
 
 
 install_zsh() {
-  echo 'Creating directories for your ZSH customizations...'
-  mkdir -p "$HOME"/.zsh.before
-  mkdir -p "$HOME"/.zsh.after
-  mkdir -p "$HOME"/.zsh.prompts
-
   case "$SHELL" in
     *zsh*)
       echo 'ZSH is already your current shell. Restart your session to load the new settings.'
@@ -281,6 +277,18 @@ link_config_files() {
 }
 
 
+create_ywd_local_dirs() {
+  echo "Creating $ywd_local_root for customizations..."
+  mkdir -p "$ywd_local_root"/vim/before
+  mkdir -p "$ywd_local_root"/vim/plugs/before
+  mkdir -p "$ywd_local_root"/vim/plugs/after
+  mkdir -p "$ywd_local_root"/vim/after
+  mkdir -p "$ywd_local_root"/zsh/before
+  mkdir -p "$ywd_local_root"/zsh/after
+  mkdir -p "$ywd_local_root"/zsh/prompts
+}
+
+
 
 
 # Main
@@ -297,4 +305,5 @@ install_tmux_plugins
 install_fonts
 link_config_files
 install_neovim_plugins
+create_ywd_local_dirs
 print_end_message

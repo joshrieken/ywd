@@ -1,5 +1,14 @@
 call plug#begin('~/.config/nvim/plugged')
 
+
+" -----------------------------------------------------------------------------
+" Before-hook for user plugs
+" -----------------------------------------------------------------------------
+for fpath in split(globpath('~/.ywd.local/vim/plugs/before', '*.vim'), '\n')
+  exe 'source' fpath
+endfor
+
+
 " -----------------------------------------------------------------------------
 " General functionality improvements {{{
 " -----------------------------------------------------------------------------
@@ -295,6 +304,14 @@ Plug 'rizzatti/dash.vim'
 " Open the current Markdown buffer in Marked.app
 Plug 'itspriddle/vim-marked'
 " }}}
+
+
+" -----------------------------------------------------------------------------
+" After-hook for user plugs
+" -----------------------------------------------------------------------------
+for fpath in split(globpath('~/.ywd.local/vim/plugs/after', '*.vim'), '\n')
+  exe 'source' fpath
+endfor
 
 
 call plug#end()
