@@ -265,7 +265,7 @@ link_config_files() {
   create_link_with_backup "$HOME"/.zlogin "$ywd_root"/zsh/prezto/runcoms/zlogin
   create_link_with_backup "$HOME"/.zlogout "$ywd_root"/zsh/prezto/runcoms/zlogout
   create_link_with_backup "$HOME"/.zprezto "$ywd_root"/zsh/prezto
-  create_link_with_backup "$HOME"/.zpreztorc "$ywd_root"/zsh/prezto-override
+  create_link_with_backup "$HOME"/.zpreztorc "$ywd_root"/zsh/prezto-override/zpreztorc
   create_link_with_backup "$HOME"/.zprofile "$ywd_root"/zsh/prezto/runcoms/zprofile
   create_link_with_backup "$HOME"/.zshenv "$ywd_root"/zsh/prezto/runcoms/zshenv
   create_link_with_backup "$HOME"/.zshrc "$ywd_root"/zsh/prezto/runcoms/zshrc
