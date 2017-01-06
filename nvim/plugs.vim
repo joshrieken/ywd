@@ -134,7 +134,8 @@ Plug 'vim-scripts/dbext.vim'
 " Web APIs (using curl or wget)
 Plug 'mattn/webapi-vim'
 " Automatically discover and properly update ctags files on save
-Plug 'craigemery/vim-autotag'
+" Plug 'craigemery/vim-autotag'
+Plug 'ludovicchabant/vim-gutentags'
 " }}}
 
 
@@ -234,7 +235,7 @@ Plug 'mattonrails/vim-mix'
 " Phoenix framework
 Plug 'avdgaag/vim-phoenix'
 " Completion/doc/eval w/ deoplete integration
-Plug 'awetzel/elixir.nvim', { 'do': 'yes \| ./install.sh' }
+Plug 'slashmili/alchemist.vim'
 " }}}
 
 
