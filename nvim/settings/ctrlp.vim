@@ -40,7 +40,7 @@ nnoremap <silent> <leader>bb :CtrlPBuffer<cr>
 nnoremap <silent> <leader>bt :CtrlPBufTag<cr>
 
 " Search all tags
-nnoremap <silent> <leader>p :CtrlPTag<cr>
+nnoremap <silent> <leader>at :CtrlPTag<cr>
 
 " Search most recently used files
 nnoremap <silent> <leader>mru :CtrlPMRU<cr>

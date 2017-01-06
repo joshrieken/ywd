@@ -31,7 +31,7 @@ Plug 'chrisbra/NrrwRgn'
 " Miscellaneous auto-load scripts
 Plug 'xolox/vim-misc'
 " Maintain a history of previous yanks, changes and deletes
-Plug 'skwp/YankRing.vim'
+Plug 'bfredl/nvim-miniyank'
 " Utility functions
 Plug 'tomtom/tlib_vim'
 " Enable repeating supported plugin maps with \".\"
