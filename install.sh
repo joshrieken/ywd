@@ -190,9 +190,8 @@ install_packages_using_dnf() {
   sudo python3 -m pip install neovim
 
   echo 'Installing packages...'
-  sudo dnf -y install python2-greenlet-devel dnf-plugins-core
-  sudo dnf -y copr enable dperson/neovim
-  sudo dnf -y install fasd neovim zsh ctags tmux the_silver_searcher
+  sudo dnf -y install python2-greenlet-devel dnf-plugins-core \
+    fasd neovim zsh ctags tmux the_silver_searcher python2-neovim python3-neovim
 }
 
 
