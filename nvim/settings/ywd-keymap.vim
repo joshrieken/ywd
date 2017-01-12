@@ -81,6 +81,7 @@ nnoremap <leader>. '.
 " put the cursor right after the quote
 imap <C-a> <esc>wa
 
+" Easily open and close the quickfix list
 nmap <silent> <leader>qc :cclose<CR>
 nmap <silent> <leader>qo :copen<CR>
 
