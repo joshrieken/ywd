@@ -180,6 +180,7 @@ alias rdmr='rake db:migrate:redo'
 alias rs='rspec spec'
 
 # Elixir / Phoenix
+alias mcf='mix compile --force'
 alias mdg='mix deps.get'
 alias mem='mix ecto.migrate'
 alias mec='mix ecto.create'
