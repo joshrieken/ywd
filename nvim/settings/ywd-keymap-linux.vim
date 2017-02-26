@@ -43,8 +43,8 @@ autocmd FileType ruby map <buffer> <A-j> ]m
 autocmd FileType ruby map <buffer> <A-k> [m
 autocmd FileType rspec map <buffer> <A-j> }
 autocmd FileType rspec map <buffer> <A-k> {
-autocmd FileType javascript map <buffer> <A-k> }
-autocmd FileType javascript map <buffer> <A-j> {
+autocmd FileType javascript map <buffer> <A-j> }
+autocmd FileType javascript map <buffer> <A-k> {
 
 " Command-/ to toggle comments
 map <A-/> :TComment<CR>
