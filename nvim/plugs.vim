@@ -56,6 +56,8 @@ Plug 'thinca/vim-ref'
 " Plug 'tpope/vim-sleuth'
 " Update folds only when asked
 Plug 'Konfekt/FastFold'
+" Delete all the buffers except the current buffer
+Plug 'schickling/vim-bufonly'
 " }}}
 
 
