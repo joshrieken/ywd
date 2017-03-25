@@ -22,8 +22,8 @@ nnoremap ^ 0
 
 
 " Auto indent pasted text
-nnoremap p p=`]<C-o>
-nnoremap P P=`]<C-o>
+" nnoremap p p=`]<C-o>
+" nnoremap P P=`]<C-o>
 
 nmap <leader>cp "*pV`]=
 nmap <leader>cP "*PV`]=
