@@ -276,8 +276,8 @@ Plug 'thinca/vim-textobj-function-javascript'
 " -----------------------------------------------------------------------------
 " Programming - HTML & CSS {{{
 " -----------------------------------------------------------------------------
-" Easily insert custom HTML & CSS
-Plug 'rstacruz/sparkup'
+" Easily insert custom HTML & CSS (emmet instead of sparkup for JSX support)
+Plug 'mattn/emmet-vim'
 " Escape or unescape HTML entities
 Plug 'skwp/vim-html-escape'
 " HTML/XML mappings
