@@ -58,6 +58,8 @@ Plug 'thinca/vim-ref'
 Plug 'Konfekt/FastFold'
 " Delete all the buffers except the current buffer
 Plug 'schickling/vim-bufonly'
+" Allow for local .vimrc files with hash-based protection
+Plug 'MarcWeber/vim-addon-local-vimrc'
 " }}}
 
 
