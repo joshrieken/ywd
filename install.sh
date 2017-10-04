@@ -189,9 +189,21 @@ install_packages_using_dnf() {
   echo 'Installing necessary prerequisites with pip...'
   sudo python3 -m pip install neovim
 
-  echo 'Installing packages...'
+  echo 'Installing DNF packages...'
   sudo dnf -y install python2-greenlet-devel dnf-plugins-core \
-    fasd neovim zsh ctags tmux the_silver_searcher python2-neovim python3-neovim
+    fasd neovim zsh tmux the_silver_searcher python2-neovim python3-neovim
+
+  echo 'Installing Universal Ctags...'
+  mkdir -p "$HOME/tmp/ywd-install"
+  git clone git@github.com:universal-ctags/ctags.git "$HOME/tmp/ywd-install/ctags"
+  (
+    cd "$HOME/tmp/ywd-install/ctags"
+    ./autogen.sh
+    ./configure
+    make
+    sudo make install
+  )
+  rm -fr "$HOME/tmp/ywd-install/ctags"
 }
 
 
