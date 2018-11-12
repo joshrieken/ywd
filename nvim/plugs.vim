@@ -99,10 +99,9 @@ Plug 'shinchu/lightline-gruvbox.vim'
 " -----------------------------------------------------------------------------
 " Navigation & search {{{
 " -----------------------------------------------------------------------------
-" Fuzzy file, buffer, mru, tag, etc finder
-Plug 'ctrlpvim/ctrlp.vim'
-" Plugins for ctrlp.vim
-Plug 'sgur/ctrlp-extensions.vim'
+" Fuzzy file, buffer, mru, tag, etc finder (auto-installs prereqs)
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 " Motions on speed!
 Plug 'easymotion/vim-easymotion'
 " Global search and replace
