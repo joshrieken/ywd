@@ -237,8 +237,6 @@ Plug 'tpope/vim-endwise'
 Plug 'mattonrails/vim-mix'
 " Phoenix framework
 Plug 'avdgaag/vim-phoenix'
-" Completion/doc/eval w/ deoplete integration
-Plug 'slashmili/alchemist.vim'
 " }}}
 
 
