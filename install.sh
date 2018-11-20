@@ -290,6 +290,7 @@ link_config_files() {
 
 create_ywd_local_dirs() {
   echo "Creating $ywd_local_root for customizations..."
+  mkdir -p "$ywd_local_root"/ssh
   mkdir -p "$ywd_local_root"/vim/before
   mkdir -p "$ywd_local_root"/vim/plugs/before
   mkdir -p "$ywd_local_root"/vim/plugs/after
@@ -297,6 +298,20 @@ create_ywd_local_dirs() {
   mkdir -p "$ywd_local_root"/zsh/before
   mkdir -p "$ywd_local_root"/zsh/after
   mkdir -p "$ywd_local_root"/zsh/prompts
+}
+
+link_ywd_local_configs() {
+  create_link_with_backup "$HOME"/.ssh/local_config "$ywd_local_root"/ssh/local_config
+}
+
+add_local_config_to_ssh_config() {
+  local line_unescaped=" Include ~/.ssh/local_config"
+  local line_escaped=" Include ~\/.ssh\/local_config"
+  if [ -e ~/.ssh/config ]; then
+    grep -q -F "$line_unescaped" ~/.ssh/config || sed -i "1s/^/$line_escaped\n\n/" ~/.ssh/config
+  else
+    echo "$line_unescaped\n\n" > ~/.ssh/config
+  fi
 }
 
 
@@ -317,4 +332,6 @@ install_fonts
 link_config_files
 install_neovim_plugins
 create_ywd_local_dirs
+link_ywd_local_configs
+add_local_config_to_ssh_config
 print_end_message
