@@ -160,7 +160,7 @@ Plug 'gregsexton/gitv', { 'on': 'Gitv' }
 " Text insertion & manipulation {{{
 " -----------------------------------------------------------------------------
 " Completion framework
-Plug 'Shougo/deoplete.nvim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 " Alignment
 Plug 'junegunn/vim-easy-align'
 " Auto-close pairable characters
@@ -212,7 +212,8 @@ Plug 'honza/vim-snippets'
 " Programming - Language-agnostic {{{
 " -----------------------------------------------------------------------------
 " Master language pack
-Plug 'sheerun/vim-polyglot'
+" Plug 'sheerun/vim-polyglot'
+Plug 'facto/vim-polyglot'
 " Commenting/uncommenting
 Plug 'tomtom/tcomment_vim'
 " Motion through CamelCaseWords and underscore_notation

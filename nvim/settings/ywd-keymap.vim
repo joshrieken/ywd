@@ -165,3 +165,7 @@ nmap <Leader>cb :let &background = ( &background == "dark"? "light" : "dark" )<C
 inoremap <leader><CR> <CR><C-o>==<C-o>O
 
 nmap <leader>w :w<CR>
+
+" Paste without placing overwritten text into the register
+" https://stackoverflow.com/a/5093286
+xnoremap <expr> p 'pgv"'.v:register.'y`>'

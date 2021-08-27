@@ -2,29 +2,50 @@ autocmd User Startified setlocal buftype= " ensures startify doesn't actually ha
 let g:startify_change_to_vcs_root = 1
 let g:startify_list_order = []
 
-
-
 let g:startify_custom_header = [
-\ '        _____|___',
-\ '     __/ ____|___|  _   _   _____    ___    _   _    ___',
-\ '    / __/        | | | | | |  _  |  / _ \  | \ | |  / _ \',
-\ '   / /     ______| | |_| | | |_| | | | | | |  \| | | | | |',
-\ '  / /    _/        |  _  | |  _ <  | | | | | \ \ | | | | |',
-\ ' | |    /          | | | | | | | \ | |_| | | |\  | | |_| |',
-\ ' | |   |           |_| |_| |_| |_|  \___/  |_| \_|  \___/',
-\ '-|-|   |             ________  _____    ________  _____    _____    ________  _____',
-\ ' | |   |            /__  ___/ / __  |  /__  ___/ / ____|  / ____|  / ______/ / __  |',
-\ ' | |    \_            / /    / /__/ /    / /    / / ___  / / ___  / /___    / /__/ /',
-\ '  \ \     \______    / /    / __   |    / /    / / /  / / / /  / / ____/   / __   |',
-\ '   \ \__         |  / /    / /  / / ___/ /__  / /__/ / / /__/ / / /_____  / /  / /',
-\ '    \__ \________| /_/    /_/  /_/ /_______/  \_____/  \_____/ /_______/ /_/  /_/',
-\ '       \_____|___|',
-\ '             |',
-\ '',
-\ '',
-\ '',
-\ '',
-\ ]
+  \ '        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM',
+  \ '        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM',
+  \ '        MMMMMMWKxddd0WMMMMMMWKkdddxONN0O0XWMMMMMMMMMMMMMNOxdddddxxxxxddk0NMMMMMMMMMMMMMMMN0xddkKWMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMN0OOOOO0NMMMMWNK0OXMMMMW0xdkXW0xxxxddddddddddxKWMMMMM',
+  \ '        MMMMMMWXc   .cONMMMMMXo.  ,kkloxdldXMMMMMMMMMMMMWO`  .:xxkkkkd;..;OWMMMMMMMMMMMMMNl   .OWMMMMMMMMMMMMMMMMMMMMMNXWMMMMMMMMMMMMMMMMWWWMMMMMMMW0kkkKWMOc:::,`;OMMMMWKkxdxOKNKk:. .kKc...            oWMMMMM',
+  \ '        MMMMMMMMd.;d;..;xXMMMM0`  cKooOxkxl0MMMMMMMMMMMMMNc  .OMMMMMMMk.  lNMMMMMMMMMMMMMk`..  lNMMMMMMMMMMMMMMMMMMMMNodWMMMWNWMMMMMMMMNKkdkNWMMMMWKkolcoxxxddl:lddk0NMMMMWWNx:;``ll. .cl.               oWMMMMM',
+  \ '        MMMMMMMMd.cNNOc..`oKWM0`  cN0dxooxkNMMMMMWWMMMMMMNc  .OMMMMWKk, .:0MMM0ldXMMMMMMK;;kl  .OMMMMMWWMMMMMMMWWWMMNd.lNWNXOkXMMMWWWMNx:lxxO0XX0Okxxxooc,,lkOl`;cc:lxdcllllc;`  :0x. ...                oWMMMMM',
+  \ '        MMMMMMMMd.cNMMW0o` .cOk`  cNNk;.`xWMN0xddoccd0NMMNc  .xKkdc,..;o0NMMMW0ldXMMMMMNl`kW0`  cXMWOc;lKMMMWXxc:dK0l. `llldKNXOollc:coxd::x0KxcoxO00d;`:oxo:c:.  .:oxlclokko;..lXMKdooc.  ,;::cloxkd,   oWMMMMM',
+  \ '        MMMMMMMMd.cNMMMMWXx,....  cNW0, .dWO:,dKXKkc..;OWNc   .,,:c` .xNMMMMMMMMMMMMMMWd`oNMWd. .xWMK; .OMMMMWO. ;KXd. cKXXNWk;,lOK0xc.ckc`lXW0o:,,c0WOdo;`.;x0o. :xc`....cKWk,`l0Xx`..   ,dl,....,OWK,  oWMMMMM',
+  \ '        MMMMMMMMd.cNMMMMMMMNk:.   cNMNc .dk..dWMMWN0:  .kNc  .oKNWMXc..lXMMMMMMMMMMMMMO,:0KOd;.  ;KMN: .OMMMMM0, ;KWx. oNWMWk..xNXXKkd:oKk,;0Xd.    oNKd;  .;kKx` ..   ..`;OW0,.:0Nd.     ..    ..,xWX:  oWMMMMM',
+  \ '        MMMMMMMMd.cNMMMMMMMMMWx.  cNMNc .lc .lkdl:;;;:lxKNc  .OMMMMMNo. cXMMMMXO0WMMMK; .;;;cl:. .dWN: .OMMMMM0, ;KWk..l0OOKc ,Okcx0o,.:KNl;0No.    lNX:    .kWO`  .:llc;,:OM0`.:kXd.      .,clc:,,dWX:  oWMMMMM',
+  \ '        MMMMMMMMd.cNMMMMMMMMMM0`  cNMNc .ol  .,clxOXNMMWWXc  .OMMMMMMNl  cXMMMO;cKMMNl.cxOXNMMXc  ,0X: .OMMMMM0,.:KWkc;,`..,;:lc..`:.  ,0Xl;k0o.... lNX:    .xWO`.o0Oc.   .kM0` ;0Wd.    .c0Ko`    oWX:  oNMMMMM',
+  \ '        MMMMMMMMd.cNMMMMMMMMMM0`  cNMNc .d0:  :0WMMMMMXkOXc  .OMMMMMMM0` .xWMMWNNWMWx`lNMMMMMMMO..;olc;`dWMWWXo..:K0oox:.  .`oK0c.    .xXd.;0Xo. .. lNX:    .kMO,oWX:    .cXM0` `0Nk`  .`cKWx.    ;0WXc  lXNNWWW',
+  \ '        MMMMMMWXc ,0WMMMMMMMMNo.  ,ONO`  :KKd,.`cdkxdl;:OO`  .oNMMMMMW0,  `OWMMMMMWk`.xWMMMMMMW0, .,;xo..;loodl. `xx;lKXOol:..:kKOdlloxx:..oNMO,.`;;oKNd.   ;KMXllOOxl;;:ccoXXl..cKNOolc``kNKd:;;ccl0Nx..lkxxdoO',
+  \ '        MMMMMMWKxddONMMMMMMMWKxdoodOKOdoox0WMNKkdddddkOKXOdoodkKWMMMMWKxoddONMMMMMXkddONMMMMMMW0xoodkXXOddx0XNNkdxOOxx0NMWXkdodx0NWMWN0xdd0WMMWXkk00KNWW0xdkXMMMN00KNMWX0xoxXMXxclkNNX0kddkKXNWX0kdokXN0k0XKXK0X',
+  \ '        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWKOOKXXXK0kONNkdOKKKXXOOX0kkKOdkNMMMMMMMMM',
+  \ '        MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMWNXXNNWWWXKWMNK0XWWWWWXXWWXXNK0XWMMMMMMMMM',
+  \ '',
+  \ '',
+  \ '',
+  \ '',
+  \ ]
+
+" let g:startify_custom_header = [
+" \ '        _____|___',
+" \ '     __/ ____|___|  _   _   _____    ___    _   _    ___',
+" \ '    / __/        | | | | | |  _  |  / _ \  | \ | |  / _ \',
+" \ '   / /     ______| | |_| | | |_| | | | | | |  \| | | | | |',
+" \ '  / /    _/        |  _  | |  _ <  | | | | | \ \ | | | | |',
+" \ ' | |    /          | | | | | | | \ | |_| | | |\  | | |_| |',
+" \ ' | |   |           |_| |_| |_| |_|  \___/  |_| \_|  \___/',
+" \ '-|-|   |             ________  _____    ________  _____    _____    ________  _____',
+" \ ' | |   |            /__  ___/ / __  |  /__  ___/ / ____|  / ____|  / ______/ / __  |',
+" \ ' | |    \_            / /    / /__/ /    / /    / / ___  / / ___  / /___    / /__/ /',
+" \ '  \ \     \______    / /    / __   |    / /    / / /  / / / /  / / ____/   / __   |',
+" \ '   \ \__         |  / /    / /  / / ___/ /__  / /__/ / / /__/ / / /_____  / /  / /',
+" \ '    \__ \________| /_/    /_/  /_/ /_______/  \_____/  \_____/ /_______/ /_/  /_/',
+" \ '       \_____|___|',
+" \ '             |',
+" \ '',
+" \ '',
+" \ '',
+" \ '',
+" \ ]
 
 
 " let g:startify_custom_header = [

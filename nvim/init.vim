@@ -69,6 +69,7 @@ filetype indent on
 set list listchars=tab:\ \ ,trail:·
 
 set nowrap       "Don't wrap lines
+set formatoptions-=t
 set linebreak    "Wrap lines at convenient points
 
 
